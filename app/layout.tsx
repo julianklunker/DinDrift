@@ -5,6 +5,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/lib/LanguageContext"
 import { cn } from "@/lib/utils"
+import CookieBanner from "@/components/CookieBanner"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -32,7 +33,10 @@ export default function RootLayout({
     >
       <body>
         <LanguageProvider>
-          <ThemeProvider>{children}</ThemeProvider>
+          <ThemeProvider>
+            {children}
+            <CookieBanner />
+          </ThemeProvider>
         </LanguageProvider>
       </body>
     </html>

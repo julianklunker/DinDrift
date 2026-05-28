@@ -7,12 +7,12 @@ import Floating, { FloatingElement } from "@/components/ui/parallax-floating"
 
 const floatingImages = [
   {
-    url: "https://images.unsplash.com/photo-1727341554370-80e0fe9ad082?q=80&w=2276&auto=format&fit=crop",
-    alt: "Person at desk",
+    url: "https://d8j0ntlcm91z4.cloudfront.net/user_3Dnsm5lLU06WWBvM3reUpu9YIlB/hf_20260528_110519_9a271025-da07-4e91-be68-0afa84bb4e53.png",
+    alt: "AI scheduling calendar interface",
   },
   {
-    url: "https://images.unsplash.com/photo-1640680608781-2e4199dd1579?q=80&w=3087&auto=format&fit=crop",
-    alt: "Neon palm",
+    url: "https://d8j0ntlcm91z4.cloudfront.net/user_3Dnsm5lLU06WWBvM3reUpu9YIlB/hf_20260528_152551_a2c98d3c-c0d2-45c4-a2d3-2311d4422146.png",
+    alt: "AI spreadsheet automation interface",
   },
   {
     url: "https://images.unsplash.com/photo-1726083085160-feeb4e1e5b00?q=80&w=3024&auto=format&fit=crop",

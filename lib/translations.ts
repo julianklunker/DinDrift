@@ -152,15 +152,15 @@ export const translations = {
       eyebrow: "Om mig",
       heading: "Hej, jeg er Julian.",
       subheading: "Zachar-Fink.",
-      p1: "Jeg er en selvstændig full-stack udvikler baseret i København, med passion for at omsætte idéer til præcisionskonstruerede digitale produkter. Jeg designer og bygger skræddersyede AI-automatiseringsagenter og AI-drevne løsninger — alt sammen skabt til at give reel værdi for din virksomhed.",
+      p1: "Jeg er en selvstændig full-stack udvikler baseret i Aalborg, med passion for at omsætte idéer til præcisionskonstruerede digitale produkter. Jeg designer og bygger skræddersyede AI-automatiseringsagenter og AI-drevne løsninger — alt sammen skabt til at give reel værdi for din virksomhed.",
       p2: "Jeg arbejder direkte med dig — ingen account managers, intet bureau-overhead, ingen videregivelse. Hvert projekt holdes lean, fokuseret og personligt. Fra første samtale til endelig levering behandler jeg dine mål som mine egne.",
       techLabel: "Tech stack",
       linkedinBtn: "Forbind på LinkedIn",
       availableLabel: "Tilgængelig for nye projekter",
-      locationLabel: "København, Danmark",
+      locationLabel: "Aalborg, Danmark",
       cvrLabel: "CVR: 43486489",
       stats: [
-        { label: "Lokation", value: "København, DK" },
+        { label: "Lokation", value: "Aalborg, DK" },
         { label: "Rolle", value: "Full-Stack Dev" },
         { label: "Tilgang", value: "Direkte linje" },
       ],
@@ -171,10 +171,10 @@ export const translations = {
       subtext:
         "Har du et projekt i tankerne? Send en besked, og jeg vender tilbage inden for 24 timer.",
       infoItems: [
-        { label: "E-mail", value: "julianzacharfink@gmail.com" },
-        { label: "Lokation", value: "København, Danmark" },
+        { label: "E-mail", value: "dindriftai@gmail.com" },
+        { label: "Telefon", value: "+45 29 72 26 04" },
+        { label: "Lokation", value: "Aalborg, Danmark" },
         { label: "Svartid", value: "Inden for 24 timer" },
-        { label: "Tilgængelig for", value: "AI Agenter · AI Automatisering" },
       ],
       form: {
         namePlaceholder: "Dit navn",
@@ -183,7 +183,7 @@ export const translations = {
         sendBtn: "Send besked",
         sendingBtn: "Sender...",
         successMsg: "Tak! Din besked er sendt. Jeg vender tilbage snarest.",
-        errorMsg: "Noget gik galt. Prøv venligst igen eller skriv direkte til julianzacharfink@gmail.com.",
+        errorMsg: "Noget gik galt. Prøv venligst igen eller skriv direkte til dindriftai@gmail.com.",
       },
     },
     footer: {
@@ -344,15 +344,15 @@ export const translations = {
       eyebrow: "About me",
       heading: "Hi, I'm Julian.",
       subheading: "Zachar-Fink.",
-      p1: "I'm a solo full-stack developer based in Copenhagen, with a passion for turning ideas into precision-engineered digital products. I design and build bespoke AI automation agents and AI-powered solutions — all crafted to genuinely perform for your business.",
+      p1: "I'm a solo full-stack developer based in Aalborg, with a passion for turning ideas into precision-engineered digital products. I design and build bespoke AI automation agents and AI-powered solutions — all crafted to genuinely perform for your business.",
       p2: "I work directly with you — no account managers, no agency overhead, no handoffs. Every project is kept lean, focused, and personal. From first conversation to final delivery, I treat your goals as my own.",
       techLabel: "Tech stack",
       linkedinBtn: "Connect on LinkedIn",
       availableLabel: "Available for new projects",
-      locationLabel: "Copenhagen, Denmark",
+      locationLabel: "Aalborg, Denmark",
       cvrLabel: "CVR: 43486489",
       stats: [
-        { label: "Location", value: "Copenhagen, DK" },
+        { label: "Location", value: "Aalborg, DK" },
         { label: "Role", value: "Full-Stack Dev" },
         { label: "Approach", value: "Direct Line" },
       ],
@@ -363,10 +363,10 @@ export const translations = {
       subtext:
         "Have a project in mind? Send a message and I'll get back to you within 24 hours.",
       infoItems: [
-        { label: "Email", value: "julianzacharfink@gmail.com" },
-        { label: "Location", value: "Copenhagen, Denmark" },
+        { label: "Email", value: "dindriftai@gmail.com" },
+        { label: "Phone", value: "+45 29 72 26 04" },
+        { label: "Location", value: "Aalborg, Denmark" },
         { label: "Response time", value: "Within 24 hours" },
-        { label: "Available for", value: "AI Agents · AI Automation" },
       ],
       form: {
         namePlaceholder: "Your name",
@@ -375,7 +375,7 @@ export const translations = {
         sendBtn: "Send message",
         sendingBtn: "Sending...",
         successMsg: "Thank you! Your message has been sent. I'll get back to you shortly.",
-        errorMsg: "Something went wrong. Please try again or write directly to julianzacharfink@gmail.com.",
+        errorMsg: "Something went wrong. Please try again or write directly to dindriftai@gmail.com.",
       },
     },
     footer: {
