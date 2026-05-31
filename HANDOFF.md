@@ -162,3 +162,26 @@ See `MEMORY.md` for session-by-session log. Last updated: **Session 4 (2026-05-3
 **Fix:** Cloned repo fresh to `/tmp`, copied correct 102-line file from workspace, committed and pushed (`72c8959`).
 **Root cause note:** The `.git/index.lock` file on the Windows-mounted path could not be deleted from the Linux sandbox — always clone to `/tmp` when the workspace git repo has a lock file.
 **Prevention:** After every Edit on a `.tsx`/`.ts` file, run `tail -5 <file>` and `wc -l <file>` to verify completeness before committing.
+
+### 2026-05-30 — layout.tsx truncation (same root cause)
+**Error:** `Expected '</', got '<eof>'` at `layout.tsx:46`
+**Cause:** Edit tool on Windows-mounted path truncated `layout.tsx` mid-file again.
+**Fix:** Wrote complete file directly with `cat >` in `/tmp/DinDrift_fix`, pushed (`24e875e`).
+
+---
+
+## CRITICAL: Editing Workflow for Future Claude Sessions
+
+**Never use the Edit tool on `.tsx`/`.ts` files and commit directly from the Windows-mounted workspace path.**
+
+The Edit tool on the Windows-mounted workspace path (`c:\Users\Humbik\...`) silently truncates files. The recommended safe workflow:
+
+1. Make the change by writing the **complete file** using the Write tool (not Edit) on the workspace path
+2. Verify immediately: run `tail -5 <file>` and `wc -l <file>` to confirm the file is complete
+3. Only then `git add` + `git commit` + `git push`
+
+Alternatively, clone to `/tmp` for a session's edits:
+```bash
+git clone https://<GITHUB_TOKEN>@github.com/julianklunker/DinDrift.git /tmp/DinDrift_fix
+```
+Then work from `/tmp/DinDrift_fix/` where the Edit tool behaves safely.
