@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" width="120" height="80" fill="none">
+  <!-- Top wave line -->
+  <path
+    d="M 8 28 C 18 8, 36 4, 50 18 C 62 30, 58 42, 46 38 C 36 34, 34 24, 44 20 C 54 16, 70 26, 80 20 C 90 14, 100 10, 115 18"
+    stroke="#0015ff"
+    stroke-width="5.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- Bottom wave line -->
+  <path
+    d="M 2 48 C 14 32, 30 28, 44 40 C 56 50, 54 62, 42 58 C 32 54, 28 44, 38 40 C 48 36, 64 46, 76 40 C 88 34, 100 32, 118 42"
+    stroke="#0015ff"
+    stroke-width="5.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
