@@ -7,20 +7,20 @@ import Floating, { FloatingElement } from "@/components/ui/parallax-floating"
 
 const floatingImages = [
   {
-    url: "/calendar-ui.svg",
-    alt: "AI scheduling calendar interface",
+    url: "https://images.unsplash.com/photo-1562016600-ece13e8ba570?q=80&w=2838&auto=format&fit=crop",
+    alt: "Blue water",
   },
   {
-    url: "https://d8j0ntlcm91z4.cloudfront.net/user_3Dnsm5lLU06WWBvM3reUpu9YIlB/hf_20260528_152551_a2c98d3c-c0d2-45c4-a2d3-2311d4422146.png",
-    alt: "AI spreadsheet automation interface",
+    url: "/Emailtocalandexcel.png",
+    alt: "AI email to calendar and Excel automation",
   },
   {
     url: "https://images.unsplash.com/photo-1726083085160-feeb4e1e5b00?q=80&w=3024&auto=format&fit=crop",
     alt: "Crowd",
   },
   {
-    url: "https://images.unsplash.com/photo-1562016600-ece13e8ba570?q=80&w=2838&auto=format&fit=crop",
-    alt: "Blue water",
+    url: "/calendar-ui.svg",
+    alt: "AI scheduling calendar interface",
   },
   {
     url: "https://d8j0ntlcm91z4.cloudfront.net/user_3Dnsm5lLU06WWBvM3reUpu9YIlB/hf_20260529_044304_2f53d709-3c95-44ea-b068-da4125b4c4aa.png",
