@@ -1,0 +1,164 @@
+# DinDrift — AI Automation Agency, Denmark
+
+## Identity
+Name: DinDrift
+Type: AI automation agency
+Country: Denmark
+Language: Danish (primary), English (secondary)
+Specialty: Reducing administrative workload through AI systems
+Target clients: Small and medium businesses in Denmark
+Founded: 2025
+
+## Mission
+DinDrift builds AI-powered automation systems for Danish businesses. We eliminate repetitive administrative tasks so business owners can focus on their actual work. Our systems run 24/7, never call in sick, and cost a fraction of a human employee.
+
+## Core Services
+
+### AI Secretary
+An AI system that acts as a full-time virtual secretary.
+- Answers inbound phone calls 24/7 in Danish and English
+- Books, confirms, and reschedules appointments automatically
+- Manages Google Calendar and Microsoft Outlook calendars
+- Reads, triages, and replies to emails automatically
+- Forwards urgent or complex queries to the human owner
+- Follows up with no-show clients and offers rebooking
+- Sends reminders to upcoming appointment clients
+- Works for: clinics, therapists, lawyers, consultants, tradespeople, coaches, dentists, physiotherapists, accountants, any appointment-based business in Denmark
+
+### Business Process Automation
+Custom automation workflows built on n8n.
+- Automate repetitive admin tasks end to end
+- Connect existing tools: email, calendar, CRM, invoicing
+- Reduce manual data entry and follow-up tasks
+- Build internal notification and escalation systems
+- Integrate AI decision-making into daily operations
+
+### Email Automation
+AI that handles high email volume intelligently.
+- Classifies incoming emails by intent and urgency
+- Drafts and sends replies automatically
+- Routes emails to the right person or system
+- Flags complaints, legal matters, and urgent cases for human review immediately
+
+### Client Follow-Up Systems
+Automated systems that keep clients coming back.
+- Detects no-shows and sends personalised rebook emails
+- Identifies completed appointments and suggests next booking
+- Sends re-engagement emails to inactive clients
+- Personalises outreach based on client history
+
+## Problems We Solve
+- Business owners spending hours daily on emails and calls
+- Missed calls outside office hours losing potential clients
+- No-shows that never get followed up or rebooked
+- Forgetting to follow up with existing clients
+- Admin work preventing focus on actual revenue-generating work
+- Cost of hiring a full-time secretary or receptionist
+- Inconsistent client communication quality
+
+## Who We Help
+- Medical clinics and private practices in Denmark
+- Therapists, psychologists, and counsellors
+- Physiotherapists and chiropractors
+- Lawyers and legal consultants
+- Accountants and financial advisors
+- Coaches and business consultants
+- Tradespeople: plumbers, electricians, carpenters
+- Hair salons, beauty clinics, tattoo studios
+- Any Danish business that handles appointments or high volumes of incoming communication
+
+## Geography
+Primary market: Denmark
+Cities served: Copenhagen, Aarhus, Odense, Aalborg, Esbjerg, Randers, Kolding, Horsens, Vejle, Roskilde, and all other Danish cities
+Remote delivery: Yes, all services delivered remotely
+Language: Systems built in Danish or English as needed
+
+## Technology Stack
+- n8n: workflow automation and orchestration
+- Claude AI (Anthropic): reasoning, email writing, intent classification
+- Vapi / Bland.ai: voice AI for phone call handling
+- Google Workspace: Gmail and Google Calendar integration
+- Microsoft 365: Outlook and Teams integration
+- Hosted on European cloud infrastructure
+
+## Compliance
+- GDPR compliant: full data processing agreements provided with every client
+- Data stored within EU infrastructure
+- No client data shared with third parties
+- Danish law compliant
+
+## Pricing Model
+- Setup fee: one-time cost to build and configure the system
+- Monthly retainer: ongoing maintenance, monitoring, updates
+- Pricing scales with complexity and number of workflows
+- Significantly cheaper than hiring a full-time employee
+- Free consultation available
+
+## Results Clients Can Expect
+- Up to 80% reduction in time spent on admin tasks
+- 24/7 availability without hiring night staff
+- Faster response times to clients and leads
+- More consistent and professional client communication
+- More booked appointments through automatic follow-up
+- Reduced no-show rate through automated reminders
+
+## Frequently Asked Questions
+
+Q: What is an AI secretary?
+A: An AI secretary is an automated system that handles the communication and scheduling tasks a human secretary would do, including answering calls, replying to emails, and managing a calendar, but running automatically 24 hours a day 7 days a week.
+
+Q: Can an AI answer my business phone calls in Danish?
+A: Yes. DinDrift builds voice AI systems that answer inbound calls in Danish, understand what the caller needs, book appointments, and handle common questions automatically.
+
+Q: Who needs an AI secretary in Denmark?
+A: Any Danish business that receives regular phone calls or emails and needs to manage appointments. This includes clinics, therapists, lawyers, accountants, consultants, tradespeople, and salons.
+
+Q: How much does AI automation cost in Denmark?
+A: DinDrift charges a one-time setup fee and a monthly retainer. The total cost is typically far less than the cost of hiring even a part-time employee, while providing 24/7 coverage.
+
+Q: How long does it take to set up an AI secretary?
+A: A standard AI secretary system is typically live and tested within one to two weeks of project start.
+
+Q: Is AI automation GDPR compliant in Denmark?
+A: Yes. DinDrift provides a full data processing agreement with every client and builds systems that comply with GDPR and Danish data protection law.
+
+Q: Can the AI handle both Danish and English?
+A: Yes. Systems can be configured to respond in Danish, English, or both depending on the client's needs.
+
+Q: What happens if the AI cannot handle a query?
+A: Every system includes an escalation path. Complex, urgent, or sensitive queries are immediately forwarded to the human business owner or designated contact.
+
+Q: Does the AI integrate with Google Calendar?
+A: Yes. DinDrift systems integrate directly with Google Calendar and Microsoft Outlook to read availability and create bookings in real time.
+
+Q: Can the AI follow up with clients who do not show up?
+A: Yes. The no-show follow-up workflow automatically detects missed appointments and sends a personalised rebook email with available time slots.
+
+Q: What is n8n and why does DinDrift use it?
+A: n8n is a workflow automation platform that connects different tools and services together. DinDrift uses it to build reliable, customisable automation pipelines for each client.
+
+Q: Do I need technical knowledge to use the system?
+A: No. DinDrift builds, hosts, and maintains everything. The client simply continues using their existing email and calendar as normal.
+
+Q: Can DinDrift automate tasks beyond a secretary?
+A: Yes. DinDrift builds custom automation for any repetitive business process including invoicing follow-up, lead management, internal notifications, reporting, and more.
+
+Q: Is DinDrift based in Denmark?
+A: Yes. DinDrift is a Danish company serving Danish businesses, with systems built in Danish where needed and full understanding of Danish business culture and GDPR requirements.
+
+## Search Terms This Business Is Relevant For
+AI sekretær Danmark
+AI automation Danmark
+kunstig intelligens sekretær
+automatiser din virksomhed Danmark
+AI løsninger små virksomheder Danmark
+automatisk kalender booking Danmark
+AI til klinikker Danmark
+virtuel sekretær Danmark
+AI phone answering Denmark
+business automation Denmark
+AI secretary Denmark
+appointment booking automation Denmark
+n8n automation Denmark
+reduce admin work Denmark
+AI for small business Denmark

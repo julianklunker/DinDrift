@@ -1,31 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" width="420" height="120" fill="none">
-  <!-- Wave/Drift icon -->
-  <g transform="translate(10, 18)">
-    <!-- Top wave line -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 80" width="380" height="80" fill="none">
+  <!-- Logo mark -->
+  <g>
+    <!-- Top stroke: sweeps right, curls into a loop, then waves right -->
     <path
-      d="M 8 38 C 18 18, 36 14, 50 28 C 62 40, 58 52, 46 48 C 36 44, 34 34, 44 30 C 54 26, 70 36, 80 30 C 90 24, 100 20, 115 28"
+      d="M 8 28 C 18 8, 38 4, 54 18 C 66 30, 62 46, 48 42 C 36 38, 34 26, 44 20 C 56 13, 74 26, 86 20 C 98 14, 110 10, 124 18"
       stroke="#0015ff"
-      stroke-width="5.5"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
-    <!-- Bottom wave line -->
+    <!-- Bottom stroke: same shape, offset below -->
     <path
-      d="M 2 58 C 14 42, 30 38, 44 50 C 56 60, 54 72, 42 68 C 32 64, 28 54, 38 50 C 48 46, 64 56, 76 50 C 88 44, 100 42, 118 52"
+      d="M 2 50 C 14 32, 32 28, 48 42 C 60 52, 58 68, 44 64 C 32 60, 28 48, 38 42 C 50 35, 68 48, 82 42 C 96 36, 108 34, 124 42"
       stroke="#0015ff"
-      stroke-width="5.5"
+      stroke-width="6"
       stroke-linecap="round"
       stroke-linejoin="round"
     />
   </g>
   <!-- DINDRIFT text -->
   <text
-    x="150"
-    y="78"
+    x="148"
+    y="52"
     font-family="'Inter', 'Arial Black', Arial, sans-serif"
-    font-size="52"
+    font-size="38"
     font-weight="800"
-    letter-spacing="2"
+    letter-spacing="1"
     fill="#0015ff"
   >DINDRIFT</text>
 </svg>

@@ -47,11 +47,17 @@ function ThemeHotkey() {
         return
       }
 
-      if (event.key.toLowerCase() !== "d") {
+      // Guard against undefined event.key (IME / synthetic events)
+      if (!event.key) {
         return
       }
 
+      // Ignore when user is typing in a form field
       if (isTypingTarget(event.target)) {
+        return
+      }
+
+      if (event.key.toLowerCase() !== "d") {
         return
       }
 

@@ -39,11 +39,12 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="hover:opacity-80 transition-opacity">
           <Image
-            src="/logo-full.svg"
+            src="/dindriftlogo.png"
             alt="DinDrift"
-            width={140}
-            height={40}
+            width={200}
+            height={109}
             priority
+            className="h-10 w-auto"
           />
         </Link>
 
@@ -52,14 +53,24 @@ export default function Navbar() {
           {[
             { label: t.nav.solutions, id: "solutions", href: null },
             { label: t.nav.about, id: "about", href: null },
+            { label: t.nav.pricing, id: "", href: "/priser" },
           ].map((item) => (
-            <li key={item.id}>
-              <button
-                onClick={() => scrollTo(item.id)}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
-              >
-                {item.label}
-              </button>
+            <li key={item.label}>
+              {item.href ? (
+                <Link
+                  href={item.href}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <button
+                  onClick={() => scrollTo(item.id)}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {item.label}
+                </button>
+              )}
             </li>
           ))}
           <li>
@@ -92,4 +103,11 @@ export default function Navbar() {
                 ? "font-semibold text-foreground"
                 : "text-muted-foreground hover:text-foreground"
             }`}
-      
+          >
+            EN
+          </button>
+        </div>
+      </nav>
+    </header>
+  )
+}
