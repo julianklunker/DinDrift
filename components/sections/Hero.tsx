@@ -15,8 +15,8 @@ const floatingImages = [
     alt: "AI email to calendar and Excel automation",
   },
   {
-    url: "https://images.unsplash.com/photo-1726083085160-feeb4e1e5b00?q=80&w=3024&auto=format&fit=crop",
-    alt: "Crowd",
+    url: "/Chatbotimg.jfif",
+    alt: "AI chatbot interface",
   },
   {
     url: "/calendar-ui.svg",
