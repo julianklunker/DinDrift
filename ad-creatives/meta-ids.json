@@ -1,0 +1,42 @@
+{
+  "ad_account_id": "2876991242697116",
+  "currency": "DKK",
+  "page_id": "1073703132504126",
+  "pixel_id": "1327683732481417",
+  "campaign_id": "120248028521920717",
+  "campaign_name": "DinDrift — AI Agenter (Leads)",
+  "daily_budget_ore": 5000,
+  "link_url": "https://dindrift.com/kontakt",
+  "cta": "BOOK_NOW",
+  "optimization_goal": "LANDING_PAGE_VIEWS",
+  "note": "20 ads blocked on missing payment method on ad account 2876991242697116. Creatives already exist; finish by calling ads_create_ad for each mapping below (status PAUSED).",
+  "ad_sets": {
+    "A1 — Tid tilbage": "120248028691200717",
+    "A2 — AI-medarbejder": "120248028703020717",
+    "A3 — Mist aldrig en kunde": "120248028706540717",
+    "A4 — Skræddersyet": "120248028712240717",
+    "A5 — Automatisk vækst": "120248028719670717"
+  },
+  "ads": [
+    {"name": "a1_1", "ad_set": "120248028691200717", "creative_id": "940064475724836"},
+    {"name": "a1_2", "ad_set": "120248028691200717", "creative_id": "1666962157944352"},
+    {"name": "a1_3", "ad_set": "120248028691200717", "creative_id": "1631280454829535"},
+    {"name": "a1_4", "ad_set": "120248028691200717", "creative_id": "2003392656917013"},
+    {"name": "a2_1", "ad_set": "120248028703020717", "creative_id": "2080029322939326"},
+    {"name": "a2_2", "ad_set": "120248028703020717", "creative_id": "1761292441520911"},
+    {"name": "a2_3", "ad_set": "120248028703020717", "creative_id": "3460365404129185"},
+    {"name": "a2_4", "ad_set": "120248028703020717", "creative_id": "986864890606144"},
+    {"name": "a3_1", "ad_set": "120248028706540717", "creative_id": "4260069150925736"},
+    {"name": "a3_2", "ad_set": "120248028706540717", "creative_id": "2722925731434188"},
+    {"name": "a3_3", "ad_set": "120248028706540717", "creative_id": "1366849275372303"},
+    {"name": "a3_4", "ad_set": "120248028706540717", "creative_id": "984693833964971"},
+    {"name": "a4_1", "ad_set": "120248028712240717", "creative_id": "990867513647282"},
+    {"name": "a4_2", "ad_set": "120248028712240717", "creative_id": "3814603068679449"},
+    {"name": "a4_3", "ad_set": "120248028712240717", "creative_id": "1748391023197264"},
+    {"name": "a4_4", "ad_set": "120248028712240717", "creative_id": "28240207842234774"},
+    {"name": "a5_1", "ad_set": "120248028719670717", "creative_id": "1762839131746734"},
+    {"name": "a5_2", "ad_set": "120248028719670717", "creative_id": "1514752770094262"},
+    {"name": "a5_3", "ad_set": "120248028719670717", "creative_id": "4016350665168257"},
+    {"name": "a5_4", "ad_set": "120248028719670717", "creative_id": "4028055434153423"}
+  ]
+}

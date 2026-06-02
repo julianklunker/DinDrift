@@ -1,0 +1,47 @@
+{
+  "brand": "DinDrift",
+  "url": "https://dindrift.com",
+  "market": "Denmark (Danish-first, EN secondary)",
+  "founder": "Julian Zachar-Fink",
+  "location": "Aalborg, Danmark",
+  "category": "AI agents / business automation agency for SMBs",
+  "contact": {
+    "email": "dindriftai@gmail.com",
+    "phone": "+45 29 72 26 04",
+    "linkedin": "linkedin.com/in/julian-zachar-fink-5574672b9/",
+    "cvr": "43486489"
+  },
+  "products": [
+    { "name": "Sekretær Agent", "desc": "Scheduling, reminders, correspondence automation" },
+    { "name": "Økonomiansvarlig Agent", "desc": "Automatic bookkeeping, expense tracking, financial reports" },
+    { "name": "Hjemmeside Chatbot", "desc": "24/7 website AI chatbot for customer queries" },
+    { "name": "E-mail Assistent", "desc": "Auto-reads and replies to email in your brand tone" },
+    { "name": "No-show Opfolgning", "desc": "Automated follow-up on missed appointments" },
+    { "name": "Modebooker Agent", "desc": "Auto-books meetings by attendee availability" },
+    { "name": "Google Anmeldelser Agent", "desc": "Automates Google reviews generation" },
+    { "name": "Custom Solutions", "desc": "Bespoke AI agents, no standard package" }
+  ],
+  "palette": {
+    "primary": "#0015ff",
+    "primary_tints": ["blue-50", "blue-100"],
+    "background": "#ffffff",
+    "neutrals": ["gray-50", "gray-200", "gray-400"],
+    "text": "#252525"
+  },
+  "fonts": { "primary": "Geist", "mono": "Geist Mono" },
+  "voice": {
+    "tone": ["direct", "warm", "founder-led", "plain-spoken", "anti-agency"],
+    "person": "second person (din/dine), occasional first person (jeg)",
+    "avoid": ["hype", "jargon", "corporate buzzwords", "fake income claims"],
+    "snippets": [
+      "Intelligente AI-agenter skraeddersyet til din virksomhed",
+      "Fantasien er graensen",
+      "Hej, jeg er Julian",
+      "Ingen account managers, intet bureau-overhead"
+    ]
+  },
+  "campaign_constraints": {
+    "no_fake_testimonials": true,
+    "creative_direction": "benefit-led (time freedom, less busywork, revenue growth) stated as brand claims, not customer quotes"
+  }
+}

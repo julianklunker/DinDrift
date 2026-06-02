@@ -3,6 +3,7 @@
 import { useState, useRef, FormEvent } from "react"
 import { motion } from "motion/react"
 import emailjs from "@emailjs/browser"
+import { trackLead } from "@/lib/fbpixel"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import Link from "next/link"
@@ -72,6 +73,7 @@ export default function KontaktClient() {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? ""
       )
       setFormState("success")
+      trackLead({ content_name: "Kontaktformular" })
       formRef.current.reset()
     } catch {
       setFormState("error")

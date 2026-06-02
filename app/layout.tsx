@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/lib/LanguageContext"
 import { cn } from "@/lib/utils"
 import CookieBanner from "@/components/CookieBanner"
+import MetaPixel from "@/components/MetaPixel"
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
 
@@ -53,6 +54,7 @@ export default function RootLayout({
             gtag('config', 'AW-18195313302');
           `}
         </Script>
+        <MetaPixel />
       </head>
       <body>
         <LanguageProvider>
