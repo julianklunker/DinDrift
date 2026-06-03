@@ -71,15 +71,25 @@ export default function About() {
               </div>
             </div>
 
-            {/* LinkedIn button */}
-            <a
-              href="https://www.linkedin.com/in/julian-zachar-fink-5574672b9/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="self-start mt-2 text-sm font-semibold px-5 py-2.5 rounded-full border border-border hover:bg-muted transition-colors"
-            >
-              {a.linkedinBtn} →
-            </a>
+            {/* LinkedIn + Portfolio buttons */}
+            <div className="flex flex-wrap items-center gap-3 mt-2">
+              <a
+                href="https://www.linkedin.com/in/julian-zachar-fink-5574672b9/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold px-5 py-2.5 rounded-full border border-border hover:bg-muted transition-colors"
+              >
+                {a.linkedinBtn} →
+              </a>
+              <a
+                href="https://www.julianzacharfink.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-semibold px-5 py-2.5 rounded-full bg-[#0015ff] text-white hover:opacity-90 transition-opacity"
+              >
+                Portfolio ↗
+              </a>
+            </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 pt-4 border-t border-border mt-2">

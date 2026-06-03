@@ -15,6 +15,18 @@ export default function Footer() {
           <span className="hidden sm:inline">·</span>
           <span>{f.cvr}</span>
           <span className="hidden sm:inline">·</span>
+          <Link href="/blog" className="hover:text-foreground transition-colors">
+            Blog
+          </Link>
+          <span className="hidden sm:inline">·</span>
+          <Link href="/cases" className="hover:text-foreground transition-colors">
+            Cases
+          </Link>
+          <span className="hidden sm:inline">·</span>
+          <Link href="/faq" className="hover:text-foreground transition-colors">
+            FAQ
+          </Link>
+          <span className="hidden sm:inline">·</span>
           <Link href="/privatlivspolitik" className="hover:text-foreground transition-colors">
             Privatlivspolitik
           </Link>

@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useRef, FormEvent } from "react"
+import { useState, useRef, FormEvent, ChangeEvent } from "react"
 import { motion } from "motion/react"
 import emailjs from "@emailjs/browser"
 import { trackLead } from "@/lib/fbpixel"
@@ -56,6 +56,94 @@ function StatPill({ label, value, accent = false }: { label: string; value: stri
   )
 }
 
+/* ─── Waste calculator ─── */
+function WasteCalculator() {
+  const [rate, setRate] = useState(400)
+  const [emails, setEmails] = useState(1)
+  const [invoices, setInvoices] = useState(1)
+  const [bills, setBills] = useState(0.5)
+
+  const WORK_DAYS = 22
+  const AUTO_PER_WEEK = 900
+  const AUTO_PER_MONTH = Math.round((AUTO_PER_WEEK * 52) / 12) // ~13.000 kr/md
+
+  const hoursPerDay = emails + invoices + bills
+  const hoursPerMonth = Math.round(hoursPerDay * WORK_DAYS * 10) / 10
+  const wastedPerMonth = Math.round(hoursPerMonth * rate)
+  const netSavings = wastedPerMonth - AUTO_PER_MONTH
+
+  const fieldClass =
+    "w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#0015ff]/40 transition-all"
+
+  const onNum = (setter: (n: number) => void) => (e: ChangeEvent<HTMLInputElement>) => {
+    const n = parseFloat(e.target.value)
+    setter(isNaN(n) || n < 0 ? 0 : n)
+  }
+
+  const fields = [
+    { label: "Din fakturerbare timepris (kr)", value: rate, set: setRate, step: 50 },
+    { label: "Timer/dag på e-mails", value: emails, set: setEmails, step: 0.5 },
+    { label: "Timer/dag på fakturaer", value: invoices, set: setInvoices, step: 0.5 },
+    { label: "Timer/dag på bilag & bogføring", value: bills, set: setBills, step: 0.5 },
+  ]
+
+  return (
+    <Card>
+      <div className="mb-5">
+        <p className="text-xs font-semibold text-[#0015ff] uppercase tracking-widest mb-2">Spild-beregner</p>
+        <h3 className="text-xl font-bold text-gray-900">Hvad koster rutinearbejdet dig?</h3>
+        <p className="text-sm text-gray-500 mt-1">
+          Indtast dine tal og se, hvad du taber hver måned på arbejde, en AI-agent kan klare.
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-4">
+        {fields.map((f) => (
+          <label key={f.label} className="block">
+            <span className="text-sm text-gray-600">{f.label}</span>
+            <input
+              type="number"
+              min={0}
+              step={f.step}
+              value={f.value}
+              onChange={onNum(f.set)}
+              className={`${fieldClass} mt-1`}
+            />
+          </label>
+        ))}
+      </div>
+
+      <div className="mt-6 space-y-3 text-sm">
+        <div className="flex justify-between items-center py-2 border-b border-gray-100">
+          <span className="text-gray-600">Rutinearbejde i alt</span>
+          <span className="font-semibold text-gray-900">{hoursPerMonth} timer/md</span>
+        </div>
+        <div className="flex justify-between items-center py-2 border-b border-gray-100">
+          <span className="text-gray-600 font-medium">Tabt værdi på rutinearbejde</span>
+          <span className="font-bold text-red-500 text-base">{fmt(wastedPerMonth)}/md</span>
+        </div>
+        <div className="flex justify-between items-center py-2 border-b border-gray-100">
+          <span className="text-gray-600">Automatisering (900 kr/uge)</span>
+          <span className="font-semibold text-[#0015ff]">≈ {fmt(AUTO_PER_MONTH)}/md</span>
+        </div>
+      </div>
+
+      <div className="mt-4 rounded-xl bg-green-50 border border-green-100 p-4">
+        {netSavings > 0 ? (
+          <p className="text-sm text-green-700">
+            Du kan spare ca. <strong className="text-base">{fmt(netSavings)}/md</strong> ved at
+            automatisere det — det er <strong>{fmt(netSavings * 12)}</strong> om året.
+          </p>
+        ) : (
+          <p className="text-sm text-gray-600">
+            Indtast dine timer ovenfor for at se, hvor meget du kan spare med automatisering for 3.000 kr/uge.
+          </p>
+        )}
+      </div>
+    </Card>
+  )
+}
+
 export default function PricingClient() {
   const formRef = useRef<HTMLFormElement>(null)
   const [formState, setFormState] = useState<FormState>("idle")
@@ -100,6 +188,12 @@ export default function PricingClient() {
         {/* ── HERO: 0 kr opstart ─────────────────────────────── */}
         <section className="pt-32 pb-20 px-6 text-center bg-gradient-to-b from-blue-50 to-white">
           <motion.div {...fadeUp()}>
+            <div className="mx-auto max-w-2xl mb-8 rounded-2xl border-2 border-[#0015ff] bg-[#0015ff]/5 px-6 py-4 flex items-center justify-center gap-3">
+              <span className="text-2xl" aria-hidden="true">🎁</span>
+              <p className="text-base sm:text-lg font-semibold text-gray-900">
+                Første måned <span className="text-[#0015ff]">gratis</span> — helt uden binding.
+              </p>
+            </div>
             <span className="inline-block bg-[#0015ff] text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-widest mb-6">
               Ingen bindinger · Ingen overraskelser
             </span>
@@ -457,19 +551,24 @@ export default function PricingClient() {
 
         {/* ── CONTACT FORM ──────────────────────────────────── */}
         <section id="kontakt" className="py-20 px-6 bg-gradient-to-b from-gray-50 to-white">
-          <div className="max-w-2xl mx-auto">
-            <motion.div {...fadeUp()} className="text-center mb-10">
+          <div className="max-w-6xl mx-auto">
+            <motion.div {...fadeUp()} className="text-center mb-12">
               <p className="text-xs font-semibold text-[#0015ff] uppercase tracking-widest mb-3">Gratis · Uforpligtende</p>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
                 Hør hvad du kan spare
               </h2>
               <p className="text-gray-500 max-w-lg mx-auto">
-                Fortæl os lidt om din virksomhed — vi regner ud hvad du kan spare med AI-automatisering,
-                og vender tilbage inden for 24 timer. Ingen forpligtelse, ingen salgspres.
+                Brug beregneren til at se, hvad rutinearbejde koster dig — og udfyld formularen,
+                så vender vi tilbage inden for 24 timer. Ingen forpligtelse, ingen salgspres.
               </p>
             </motion.div>
 
-            <motion.div {...fadeUp(0.15)}>
+            <div className="grid lg:grid-cols-2 gap-8 items-start">
+              <motion.div {...fadeUp(0.1)}>
+                <WasteCalculator />
+              </motion.div>
+
+              <motion.div {...fadeUp(0.15)}>
               {formState === "success" ? (
                 <div className="bg-white border border-green-200 rounded-2xl p-10 text-center shadow-sm">
                   <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-5">
@@ -545,7 +644,8 @@ export default function PricingClient() {
                   </button>
                 </form>
               )}
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
         </section>
 

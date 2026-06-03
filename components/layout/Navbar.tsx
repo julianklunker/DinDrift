@@ -54,6 +54,9 @@ export default function Navbar() {
             { label: t.nav.solutions, id: "solutions", href: null },
             { label: t.nav.about, id: "about", href: null },
             { label: t.nav.pricing, id: "", href: "/priser" },
+            { label: t.nav.cases, id: "", href: "/cases" },
+            { label: t.nav.blog, id: "", href: "/blog" },
+            { label: t.nav.faq, id: "", href: "/faq" },
           ].map((item) => (
             <li key={item.label}>
               {item.href ? (

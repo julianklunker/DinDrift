@@ -6,6 +6,9 @@ export const translations = {
       solutions: "Løsninger",
       about: "Om os",
       pricing: "Priser",
+      cases: "Cases",
+      blog: "Blog",
+      faq: "FAQ",
       contact: "Kontakt",
     },
     hero: {
@@ -199,6 +202,9 @@ export const translations = {
       solutions: "Solutions",
       about: "About",
       pricing: "Pricing",
+      cases: "Cases",
+      blog: "Blog",
+      faq: "FAQ",
       contact: "Contact",
     },
     hero: {
