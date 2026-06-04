@@ -13,7 +13,7 @@ export const organizationSchema = {
   email: "dindriftai@gmail.com",
   telephone: "+4529722604",
   description:
-    "Intelligente AI-agenter skræddersyet til din virksomhed — sekretær, bogholder, chatbot, e-mail assistent og no-show opfølgning.",
+    "Intelligente AI-agenter skræddersyet til din virksomhed — sekretær, bogholder, chatbot, e-mail assistent, no-show opfølgning, LLM SEO optimering og leadgenerering.",
   founder: { "@type": "Person", name: "Julian Zachar-Fink" },
   sameAs: ["https://www.linkedin.com/in/julian-zachar-fink-5574672b9/"],
 }

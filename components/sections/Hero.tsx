@@ -8,7 +8,7 @@ import { GlassPanel } from "@/components/ui/glass-panel"
 
 // Background b-roll. List one combined loop (recommended) OR several clips to
 // auto-cycle. Files live in /public/hero-video/ (see that folder's README).
-const HERO_VIDEOS = ["/hero-video/hero.mp4"]
+const HERO_VIDEOS = ["/hero-video/HeroVid.mp4"]
 
 export default function Hero() {
   const { t } = useLanguage()

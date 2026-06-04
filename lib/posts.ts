@@ -234,6 +234,172 @@ export const posts: BlogPost[] = [
       ],
     },
   },
+  {
+    slug: "llm-seo-bliv-fundet-i-chatgpt-og-gemini",
+    date: "2026-06-04",
+    da: {
+      title: "LLM SEO: Sådan bliver din virksomhed fundet i ChatGPT og Gemini",
+      description:
+        "Dine kunder googler ikke længere — de spørger ChatGPT, Gemini og Perplexity. Sådan optimerer du dit indhold, så AI-søgemaskinerne anbefaler netop din virksomhed.",
+      sections: [
+        {
+          paragraphs: [
+            "Flere og flere danskere starter ikke deres søgning på Google, men i ChatGPT, Gemini, Perplexity eller Google AI Overviews. De skriver ikke længere blot \"tandlæge Aalborg\" — de spørger \"hvilken tandlæge i Aalborg er bedst til angste patienter?\" og får ét samlet svar med konkrete anbefalinger. Spørgsmålet er, om din virksomhed er den, der bliver nævnt.",
+            "Det er præcis, hvad LLM SEO — også kaldet GEO, Generative Engine Optimization — handler om: at gøre dit indhold synligt og citerbart for de store sprogmodeller, så de anbefaler dig, når en potentiel kunde spørger.",
+          ],
+        },
+        {
+          heading: "Hvorfor klassisk SEO ikke er nok længere",
+          paragraphs: [
+            "Klassisk SEO handler om at rangere højt på en liste af links. Men når en AI svarer, ser brugeren sjældent listen — den ser ét svar. Hvis din virksomhed ikke indgår i det svar, eksisterer du reelt ikke for den kunde, uanset hvor god din hjemmeside er.",
+            "AI-modeller udvælger deres svar ud fra indhold, de kan forstå, stole på og citere. Det belønner tydelig struktur, konkrete fakta og sprog, der direkte besvarer rigtige spørgsmål — ikke keyword-proppet marketingtekst.",
+          ],
+        },
+        {
+          heading: "Hvad der gør indhold AI-venligt",
+          paragraphs: [
+            "Tre ting flytter mest: struktur, klarhed og tillid. Struktureret data (schema) og et tydeligt FAQ-format gør det nemt for modellen at udtrække svar. Klart sprog, der besvarer ét spørgsmål ad gangen, gør dit indhold nemt at citere. Og tillidssignaler — som CVR, lokation, anmeldelser og konsistente oplysninger på tværs af nettet — gør, at modellen tør anbefale dig.",
+            "I praksis betyder det FAQ-sektioner, der besvarer de spørgsmål kunderne faktisk stiller, korte og præcise afsnit, og teknisk markup, der fortæller AI'en, hvem du er, hvad du tilbyder, og hvor du opererer.",
+          ],
+        },
+        {
+          heading: "Sådan arbejder DinDrifts LLM SEO Optimizer",
+          paragraphs: [
+            "Vi optimerer dit indhold til ChatGPT, Gemini og Perplexity, tilføjer struktureret data og FAQ-schema, og omskriver dine vigtigste sider, så de er citerbare for AI. Derefter overvåger vi løbende, hvordan og hvornår din virksomhed bliver nævnt i AI-svar — så du kan se effekten, ikke bare tro på den.",
+            "Det er den samme logik som almindelig SEO, men målrettet den måde, dine kunder rent faktisk søger på i 2026.",
+          ],
+        },
+        {
+          heading: "Kom i gang",
+          paragraphs: [
+            "Vil du vide, om din virksomhed allerede bliver nævnt — eller overset — af ChatGPT og Gemini? Book en gratis og uforpligtende snak, så tjekker vi det sammen og finder de hurtigste gevinster for dig.",
+          ],
+        },
+      ],
+    },
+    en: {
+      title: "LLM SEO: How to get your business found in ChatGPT and Gemini",
+      description:
+        "Your customers no longer just google — they ask ChatGPT, Gemini, and Perplexity. Here's how to optimise your content so AI search engines recommend your business.",
+      sections: [
+        {
+          paragraphs: [
+            "More and more people no longer start their search on Google, but in ChatGPT, Gemini, Perplexity, or Google AI Overviews. They no longer just type \"dentist Aalborg\" — they ask \"which dentist in Aalborg is best for anxious patients?\" and get a single answer with concrete recommendations. The question is whether your business is the one that gets named.",
+            "That's exactly what LLM SEO — also called GEO, Generative Engine Optimization — is about: making your content visible and citable to the large language models so they recommend you when a potential customer asks.",
+          ],
+        },
+        {
+          heading: "Why classic SEO is no longer enough",
+          paragraphs: [
+            "Classic SEO is about ranking high in a list of links. But when an AI answers, the user rarely sees the list — they see one answer. If your business isn't part of that answer, you effectively don't exist for that customer, no matter how good your website is.",
+            "AI models choose their answers from content they can understand, trust, and cite. That rewards clear structure, concrete facts, and language that directly answers real questions — not keyword-stuffed marketing copy.",
+          ],
+        },
+        {
+          heading: "What makes content AI-friendly",
+          paragraphs: [
+            "Three things move the needle most: structure, clarity, and trust. Structured data (schema) and a clear FAQ format make it easy for the model to extract answers. Clear language that answers one question at a time makes your content easy to cite. And trust signals — like a company registration, location, reviews, and consistent details across the web — make the model confident enough to recommend you.",
+            "In practice that means FAQ sections answering the questions customers actually ask, short and precise paragraphs, and technical markup that tells the AI who you are, what you offer, and where you operate.",
+          ],
+        },
+        {
+          heading: "How DinDrift's LLM SEO Optimizer works",
+          paragraphs: [
+            "We optimise your content for ChatGPT, Gemini, and Perplexity, add structured data and FAQ schema, and rewrite your most important pages so they're citable by AI. Then we continuously monitor how and when your business is mentioned in AI answers — so you can see the impact, not just hope for it.",
+            "It's the same logic as ordinary SEO, but aimed at the way your customers actually search in 2026.",
+          ],
+        },
+        {
+          heading: "Get started",
+          paragraphs: [
+            "Want to know whether your business is already being mentioned — or overlooked — by ChatGPT and Gemini? Book a free, no-obligation chat and we'll check it together and find the quickest wins for you.",
+          ],
+        },
+      ],
+    },
+  },
+  {
+    slug: "ai-leadgenerering-pipeline-der-aldrig-loeber-toer",
+    date: "2026-06-04",
+    da: {
+      title: "AI-leadgenerering: En pipeline der aldrig løber tør",
+      description:
+        "Hold op med at jage kunder manuelt. Sådan finder, kvalificerer og kontakter en AI-leadgenerator nye kunder automatisk — og holder din salgspipeline fuld.",
+      sections: [
+        {
+          paragraphs: [
+            "For de fleste små virksomheder er leadgenerering det første, der ryger, når der er travlt — og det første, man savner, når der er stille. Resultatet er en pipeline, der svinger mellem overfyldt og helt tom. En AI-leadgenerator løser præcis det problem ved at gøre kundeopsøgning til en automatisk, kontinuerlig proces.",
+          ],
+        },
+        {
+          heading: "Hvad en AI-leadgenerator faktisk gør",
+          paragraphs: [
+            "En leadgenerator er ikke bare en kontaktliste. Det er en AI-agent, der finder potentielle kunder ud fra dine kriterier, kvalificerer dem, så du ikke spilder tid på dårlige match, og kontakter dem med en personlig besked i din tone — ikke en generisk skabelon.",
+            "Derefter følger den op, indtil der kommer et svar, og lægger de varme leads direkte i dit CRM, klar til at du tager over. Du bruger din tid på samtaler med folk, der allerede har vist interesse — ikke på koldt benarbejde.",
+          ],
+        },
+        {
+          heading: "Hvorfor automatisk slår manuelt",
+          paragraphs: [
+            "Manuel leadgenerering er dyr, ujævn og afhængig af, at nogen har tid. En agent arbejder hver dag, uden at blive træt, distraheret eller demotiveret af afvisninger. Den tester systematisk, hvilke beskeder der virker, og bliver bedre over tid.",
+            "Vigtigst af alt giver det forudsigelighed: i stedet for at vente på, at kunder selv finder dig, fylder du toppen af tragten konstant — så omsætningen ikke afhænger af held eller af, hvor travlt du har.",
+          ],
+        },
+        {
+          heading: "Bygget til din virksomhed",
+          paragraphs: [
+            "DinDrifts Leadgenerator skræddersys til din branche, dine ideelle kunder og dine systemer. Vi definerer sammen, hvem et godt lead er for dig, bygger outreach i din tone, og kobler agenten sammen med dit CRM, så intet falder mellem to stole.",
+            "Som med alle vores agenter er der ingen standardpakke — kun en løsning bygget til den måde, du sælger på.",
+          ],
+        },
+        {
+          heading: "Kom i gang",
+          paragraphs: [
+            "Vil du have en pipeline, der fylder sig selv? Book en gratis og uforpligtende snak, så finder vi ud af, hvor mange kvalificerede leads din virksomhed realistisk kan nå hver måned.",
+          ],
+        },
+      ],
+    },
+    en: {
+      title: "AI lead generation: a pipeline that never runs dry",
+      description:
+        "Stop chasing customers manually. Here's how an AI leads generator finds, qualifies, and contacts new customers automatically — and keeps your sales pipeline full.",
+      sections: [
+        {
+          paragraphs: [
+            "For most small businesses, lead generation is the first thing to go when things get busy — and the first thing you miss when things go quiet. The result is a pipeline that swings between overflowing and completely empty. An AI leads generator solves exactly that by turning prospecting into an automatic, continuous process.",
+          ],
+        },
+        {
+          heading: "What an AI leads generator actually does",
+          paragraphs: [
+            "A leads generator isn't just a contact list. It's an AI agent that finds potential customers based on your criteria, qualifies them so you don't waste time on poor matches, and contacts them with a personal message in your tone — not a generic template.",
+            "It then follows up until there's a reply, and drops the warm leads straight into your CRM, ready for you to take over. You spend your time talking to people who've already shown interest — not on cold legwork.",
+          ],
+        },
+        {
+          heading: "Why automatic beats manual",
+          paragraphs: [
+            "Manual lead generation is expensive, uneven, and dependent on someone having the time. An agent works every day, without getting tired, distracted, or demotivated by rejection. It systematically tests which messages work and improves over time.",
+            "Most importantly, it brings predictability: instead of waiting for customers to find you, you fill the top of the funnel constantly — so revenue doesn't depend on luck or on how busy you are.",
+          ],
+        },
+        {
+          heading: "Built for your business",
+          paragraphs: [
+            "DinDrift's Leads Generator is tailored to your industry, your ideal customers, and your systems. Together we define what a good lead looks like for you, build outreach in your tone, and connect the agent to your CRM so nothing falls through the cracks.",
+            "As with all our agents, there's no standard package — only a solution built for the way you sell.",
+          ],
+        },
+        {
+          heading: "Get started",
+          paragraphs: [
+            "Want a pipeline that fills itself? Book a free, no-obligation chat and we'll work out how many qualified leads your business can realistically reach each month.",
+          ],
+        },
+      ],
+    },
+  },
 ]
 
 export function getAllPosts(): BlogPost[] {

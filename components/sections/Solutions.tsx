@@ -14,6 +14,9 @@ const categoryColors: Record<string, string> = {
   Communication: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-300",
   Opfølgning: "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300",
   "Follow-up": "bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300",
+  SEO: "bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-300",
+  "Vækst": "bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300",
+  Growth: "bg-teal-100 text-teal-700 dark:bg-teal-900/30 dark:text-teal-300",
 }
 
 export default function Solutions() {

@@ -29,6 +29,12 @@ Automatically books meetings based on participants' availability. From first enq
 **Google Reviews Agent** (Reputation)
 Automates Google review management — sends personalised follow-up SMS/email to satisfied customers requesting reviews, generates AI-written responses to reviews, monitors new feedback, and produces trend reports. Capabilities: automatic review request outreach, personalised follow-up SMS/email, AI-generated review responses, new feedback monitoring, review trend reporting.
 
+**LLM SEO Optimizer** (SEO)
+Makes a business visible in AI search engines like ChatGPT, Gemini, Perplexity, and Google AI Overviews (also called GEO — Generative Engine Optimisation). Optimises content so AI tools recommend the business when customers ask. Capabilities: optimisation for ChatGPT, Gemini and Perplexity, structured data and FAQ schema, AI-friendly and citable content, visibility in AI answers (GEO), ongoing AI-mention monitoring.
+
+**Leads Generator** (Growth)
+An AI agent that finds, qualifies, and contacts potential customers automatically so the sales pipeline never runs dry. Capabilities: automatic lead sourcing, lead qualification, personalised outreach, CRM integration, follow-up until reply.
+
 **Custom / Tailored Solutions**
 Any business can get any bot for their specific purposes, fully tailored to their needs. "The limit is your imagination." Julian builds for any industry and any task — your tone, your rules, your systems.
 

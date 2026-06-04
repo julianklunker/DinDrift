@@ -129,6 +129,34 @@ export const translations = {
             "Rapport over anmeldelsestrends",
           ],
         },
+        {
+          key: "llmseo",
+          category: "SEO",
+          title: "LLM SEO Optimering",
+          description:
+            "Gør din virksomhed synlig i ChatGPT, Gemini og Google AI. Vi optimerer dit indhold, så AI-søgemaskiner anbefaler dig, når kunderne spørger.",
+          capabilities: [
+            "Optimering til ChatGPT, Gemini & Perplexity",
+            "Struktureret data & FAQ-schema",
+            "AI-venligt, citerbart indhold",
+            "Synlighed i AI-svar (GEO)",
+            "Løbende overvågning af AI-omtaler",
+          ],
+        },
+        {
+          key: "leadsgen",
+          category: "Vækst",
+          title: "Leadgenerator",
+          description:
+            "En AI-agent der finder, kvalificerer og kontakter potentielle kunder automatisk — så din pipeline aldrig løber tør.",
+          capabilities: [
+            "Automatisk leadindsamling",
+            "Kvalificering af leads",
+            "Personaliseret outreach",
+            "CRM-integration",
+            "Opfølgning indtil svar",
+          ],
+        },
       ],
     },
     custom: {
@@ -323,6 +351,34 @@ export const translations = {
             "AI-generated review responses",
             "New feedback monitoring",
             "Review trend reporting",
+          ],
+        },
+        {
+          key: "llmseo",
+          category: "SEO",
+          title: "LLM SEO Optimizer",
+          description:
+            "Make your business visible in ChatGPT, Gemini, and Google AI. We optimise your content so AI search engines recommend you when customers ask.",
+          capabilities: [
+            "Optimised for ChatGPT, Gemini & Perplexity",
+            "Structured data & FAQ schema",
+            "AI-friendly, citable content",
+            "Visibility in AI answers (GEO)",
+            "Ongoing AI-mention monitoring",
+          ],
+        },
+        {
+          key: "leadsgen",
+          category: "Growth",
+          title: "Leads Generator",
+          description:
+            "An AI agent that finds, qualifies, and contacts potential customers automatically — so your pipeline never runs dry.",
+          capabilities: [
+            "Automatic lead sourcing",
+            "Lead qualification",
+            "Personalised outreach",
+            "CRM integration",
+            "Follow-up until reply",
           ],
         },
       ],

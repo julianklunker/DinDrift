@@ -32,6 +32,8 @@ Replace manual busywork with AI agents that work 24/7 — freeing business owner
 | No-Show Follow-Up Agent | "Stop losing revenue to no-shows" | DKK 5,000 |
 | Google Reviews Agent | "More 5-star reviews, zero effort" | DKK 5,000 |
 | Meeting Booker Agent | "Book meetings while you sleep" | DKK 5,000 |
+| LLM SEO Optimizer | "Get found in ChatGPT & Gemini" | DKK 5,000 |
+| Leads Generator | "A pipeline that never runs dry" | DKK 5,000 |
 | Custom Agent | "Any workflow, any industry" | Quoted |
 
 ---
