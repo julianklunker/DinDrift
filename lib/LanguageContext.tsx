@@ -1,6 +1,6 @@
 "use client"
 
-import { createContext, useContext, useState, ReactNode } from "react"
+import { createContext, useContext, useState, useEffect, ReactNode } from "react"
 import { Language, translations } from "@/lib/translations"
 
 interface LanguageContextType {
@@ -11,8 +11,26 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | null>(null)
 
+const STORAGE_KEY = "dindrift-language"
+
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguage] = useState<Language>("da")
+  const [language, setLanguageState] = useState<Language>("en")
+
+  // Restore the visitor's saved choice on mount (client-side only).
+  useEffect(() => {
+    const saved = localStorage.getItem(STORAGE_KEY)
+    if (saved === "da" || saved === "en") {
+      setLanguageState(saved)
+      document.documentElement.lang = saved
+    }
+  }, [])
+
+  // Persist the choice and keep <html lang> in sync.
+  const setLanguage = (lang: Language) => {
+    setLanguageState(lang)
+    localStorage.setItem(STORAGE_KEY, lang)
+    document.documentElement.lang = lang
+  }
 
   return (
     <LanguageContext.Provider

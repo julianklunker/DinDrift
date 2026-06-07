@@ -21,20 +21,20 @@ const fontMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://dindrift.com"),
   title: {
-    default: "DinDrift — AI Automatisering & AI-agenter til din virksomhed",
+    default: "DinDrift — AI Automation & AI Agents for Your Business",
     template: "%s — DinDrift",
   },
   description:
-    "Intelligente AI-agenter skræddersyet til din virksomhed. Sekretær, bogholder, chatbot, e-mail assistent og no-show opfølgning.",
+    "Intelligent AI agents tailored to your business. Secretary, bookkeeper, chatbot, email assistant and no-show follow-up.",
   keywords: [
-    "AI automatisering Danmark",
-    "AI agenter",
-    "AI sekretær",
-    "AI bogholder",
-    "hjemmeside chatbot",
-    "AI e-mail assistent",
-    "no-show opfølgning",
-    "automatisering for SMV",
+    "AI automation",
+    "AI agents",
+    "AI secretary",
+    "AI bookkeeper",
+    "website chatbot",
+    "AI email assistant",
+    "no-show follow-up",
+    "automation for SMBs",
     "AI automation Denmark",
     "AI agents for business",
   ],
@@ -48,19 +48,20 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "da_DK",
+    locale: "en_US",
+    alternateLocale: "da_DK",
     url: "https://dindrift.com",
     siteName: "DinDrift",
-    title: "DinDrift — AI Automatisering & AI-agenter til din virksomhed",
+    title: "DinDrift — AI Automation & AI Agents for Your Business",
     description:
-      "Intelligente AI-agenter skræddersyet til din virksomhed — automatisér de kedelige opgaver og fokusér på det, der virkelig betyder noget.",
-    images: [{ url: "/dindriftlogo.png", alt: "DinDrift — AI Automatisering" }],
+      "Intelligent AI agents tailored to your business — automate the tedious tasks and focus on what really matters.",
+    images: [{ url: "/dindriftlogo.png", alt: "DinDrift — AI Automation" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DinDrift — AI Automatisering & AI-agenter",
+    title: "DinDrift — AI Automation & AI Agents",
     description:
-      "Intelligente AI-agenter skræddersyet til din virksomhed. Automatisér rutinen, vind tiden tilbage.",
+      "Intelligent AI agents tailored to your business. Automate the routine, win back your time.",
     images: ["/dindriftlogo.png"],
   },
 }
@@ -72,7 +73,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="da"
+      lang="en"
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", geist.variable)}
     >

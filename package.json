@@ -9,7 +9,10 @@
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "social:auth": "node scripts/social/auth-linkedin.mjs",
+    "social:post": "node scripts/social/post.mjs",
+    "social:draft": "node scripts/social/post.mjs --dry-run"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",
