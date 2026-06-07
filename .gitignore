@@ -37,3 +37,6 @@ next-env.d.ts
 
 # local Claude Code tooling
 /.claude
+
+# Local-only uncompressed video backups (not deployed)
+video-source/

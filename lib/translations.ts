@@ -30,6 +30,8 @@ export const translations = {
       heading: "AI-løsninger til din virksomhed",
       subtext:
         "Vælg den løsning der passer til dine behov — eller kombiner flere for fuld automatisering.",
+      expandHint: "Læs mere",
+      videoSoon: "Forklarende video kommer snart",
       cards: [
         {
           key: "secretary",
@@ -37,6 +39,8 @@ export const translations = {
           title: "Sekretær Agent",
           description:
             "Håndterer aftaleplanlægning, påmindelser og korrespondance automatisk. Aldrig gå glip af en aftale igen.",
+          deepDescription:
+            "Sekretær Agenten fungerer som din digitale administrative medarbejder, der arbejder 24/7. Den modtager henvendelser, finder ledige tider i din kalender og booker aftaler — helt uden din indblanding.\n\nUnder motorhjelmen synkroniserer den med dit eksisterende kalendersystem og sender automatiske påmindelser til både dig og dine kunder, så ingen aftaler glipper. Den følger op på ubekræftede bookinger og omrokerer ved aflysninger.\n\nResultatet: færre dobbeltbookinger, færre udeblivelser og timevis af administrativt arbejde fjernet fra din hverdag hver uge.",
           capabilities: [
             "Automatisk aftalebooking",
             "Påmindelser til kunder & dig",
@@ -51,6 +55,8 @@ export const translations = {
           title: "Økonomiansvarlig Agent",
           description:
             "Automatisk bogføring, udgiftssporing og finansielle rapporter. Hold styr på din økonomi uden manuel indsats.",
+          deepDescription:
+            "Økonomiansvarlig Agenten holder styr på din virksomheds tal, så du slipper for at samle bilag og taste manuelt. Den registrerer indtægter og udgifter løbende og kategoriserer hver postering korrekt.\n\nDen integrerer med dit regnskabssystem og genererer overskuelige månedsrapporter, så du altid ved præcis, hvor du står. Uregelmæssigheder bliver flaget, før de bliver til problemer.\n\nResultatet: et altid opdateret økonomisk overblik, mindre revisorregning og fuld ro i maven ved kvartalsafslutning.",
           capabilities: [
             "Automatisk kategorisering",
             "Månedlige økonomirapporter",
@@ -65,6 +71,8 @@ export const translations = {
           title: "Hjemmeside Chatbot",
           description:
             "En AI-chatbot integreret direkte på din hjemmeside, der svarer på kundehenvendelser 24/7 — uden ventetid.",
+          deepDescription:
+            "Chatbotten bor direkte på din hjemmeside og besvarer kundernes spørgsmål med det samme — uanset om klokken er 14 eller 3 om natten. Den trænes på dit indhold, dine priser og dine processer, så svarene altid er korrekte.\n\nNår en henvendelse er for kompleks, viderestiller den problemfrit til dig med fuld kontekst, så kunden ikke skal gentage sig selv. Den taler flere sprog og matcher din brandtone.\n\nResultatet: kortere svartider, flere konverterede besøgende og et supportteam, der aldrig sover.",
           capabilities: [
             "24/7 kundesupport",
             "Besvarer FAQ automatisk",
@@ -79,6 +87,8 @@ export const translations = {
           title: "E-mail Assistent",
           description:
             "Læser og besvarer indgående e-mails automatisk i dit brands tone og stil. Du modtager kun dem, der kræver din opmærksomhed.",
+          deepDescription:
+            "E-mail Assistenten læser hver indkommende mail, forstår intentionen og udarbejder et svar i din tone — klar til afsendelse eller sendt helt automatisk for rutinehenvendelser.\n\nDen sorterer og prioriterer din indbakke, så de vigtige mails ligger øverst, og det støjende filtreres fra. Den integrerer direkte med Gmail eller Outlook uden at ændre din arbejdsgang.\n\nResultatet: en indbakke der passer sig selv, hurtigere svar til dine kunder og timer tilbage til det arbejde, kun du kan udføre.",
           capabilities: [
             "Automatisk e-mail-sortering",
             "Intelligente svarskabeloner",
@@ -93,6 +103,8 @@ export const translations = {
           title: "No-show Opfølgning",
           description:
             "Automatisk opfølgning på udeblevne kunder med venlige påmindelser og nemme genbestillingsmuligheder. Reducer tabte aftaler.",
+          deepDescription:
+            "No-show Agenten opdager automatisk, når en kunde ikke møder op, og sætter straks en venlig opfølgning i gang via SMS eller e-mail — uden at det føles påtrængende.\n\nHver besked indeholder et direkte link til at booke en ny tid, så kunden nemt kommer tilbage i kalenderen. Du får samtidig statistik over udeblivelser og mønstre over tid.\n\nResultatet: færre tomme tider, genvundet omsætning fra ellers tabte aftaler og kunder, der føler sig set frem for glemt.",
           capabilities: [
             "Automatisk no-show detektion",
             "Venlige SMS/e-mail påmindelser",
@@ -107,6 +119,8 @@ export const translations = {
           title: "Mødebooker Agent",
           description:
             "Booker møder automatisk baseret på deltagernes tilgængelighed. Fra første henvendelse til bekræftet kalenderinvitation — helt uden manuel indsats.",
+          deepDescription:
+            "Mødebooker Agenten overtager hele frem-og-tilbage-dialogen om at finde et tidspunkt, der passer alle. Den læser deltagernes tilgængelighed, foreslår tider og sender en bekræftet kalenderinvitation.\n\nDen håndterer tidszoner, sender påmindelser inden mødet og omrokerer automatisk ved aflysninger — uden at du rører en finger. Alt synkroniseres med din eksisterende kalender.\n\nResultatet: ingen mailtråde om mødetidspunkter, færre aflyste møder og en booking-oplevelse, der får dig til at fremstå professionel.",
           capabilities: [
             "Automatisk mødeplanlægning",
             "Kalenderintegration",
@@ -121,6 +135,8 @@ export const translations = {
           title: "Google Anmeldelser Agent",
           description:
             "Automatisér din virksomheds Google-anmeldelser — send opfølgninger til tilfredse kunder, svar på anmeldelser og hold dit omdømme opdateret uden løftefingerén.",
+          deepDescription:
+            "Google Anmeldelser Agenten beder automatisk dine tilfredse kunder om en anmeldelse på det helt rigtige tidspunkt — lige efter en god oplevelse — via personaliseret SMS eller e-mail.\n\nNår nye anmeldelser kommer ind, udarbejder den gennemtænkte svar i din tone, både på ros og kritik, så din profil altid fremstår aktiv og professionel. Den overvåger løbende for nyt feedback.\n\nResultatet: flere og bedre anmeldelser, højere placering i lokale søgninger og et stærkere omdømme, der vinder nye kunder for dig.",
           capabilities: [
             "Automatisk anmodning om anmeldelser",
             "Personaliserede opfølgnings-SMS/e-mail",
@@ -135,6 +151,8 @@ export const translations = {
           title: "LLM SEO Optimering",
           description:
             "Gør din virksomhed synlig i ChatGPT, Gemini og Google AI. Vi optimerer dit indhold, så AI-søgemaskiner anbefaler dig, når kunderne spørger.",
+          deepDescription:
+            "Flere og flere kunder spørger ChatGPT, Gemini og Perplexity om anbefalinger frem for at google. LLM SEO Optimering sikrer, at det er din virksomhed, AI'en nævner, når den bliver spurgt.\n\nVi strukturerer dit indhold med schema-data, citerbare svar og FAQ-formater, som sprogmodellerne foretrækker at trække på. Derefter overvåger vi løbende, hvordan din virksomhed omtales i AI-svar.\n\nResultatet: synlighed i den nye generation af søgning (GEO), kvalificeret trafik fra AI-værktøjer og et forspring, før dine konkurrenter opdager kanalen.",
           capabilities: [
             "Optimering til ChatGPT, Gemini & Perplexity",
             "Struktureret data & FAQ-schema",
@@ -149,6 +167,8 @@ export const translations = {
           title: "Leadgenerator",
           description:
             "En AI-agent der finder, kvalificerer og kontakter potentielle kunder automatisk — så din pipeline aldrig løber tør.",
+          deepDescription:
+            "Leadgeneratoren arbejder som en utrættelig sælger: den finder potentielle kunder, der matcher din ideelle profil, og kvalificerer dem, før de når dit bord.\n\nDen sender personaliseret outreach, følger op automatisk indtil der kommer svar, og lægger varme leads direkte i dit CRM. Du bruger kun tid på de samtaler, der reelt kan lukkes.\n\nResultatet: en pipeline der fylder sig selv, lavere kundeanskaffelsesomkostning og forudsigelig vækst måned efter måned.",
           capabilities: [
             "Automatisk leadindsamling",
             "Kvalificering af leads",
@@ -179,6 +199,19 @@ export const translations = {
         },
       ],
       cta: "Fortæl os om din idé",
+    },
+    controlSystem: {
+      eyebrow: "Vores flagskib",
+      title: "Skræddersyet AI-kontrolsystem",
+      description:
+        "Ét kommandocenter for alle de AI-agenter, du kører. Se, styr og skalér hele din automatiseringsstak fra ét skræddersyet dashboard — bygget op om din virksomhed, ikke en skabelon.",
+      features: [
+        { title: "Alle agenter, ét dashboard", description: "Sekretær, bogholder, chatbot og resten — samlet ét sted." },
+        { title: "Overblik i realtid", description: "Følg hver agents aktivitet og resultater, mens det sker." },
+        { title: "Bygget om din arbejdsgang", description: "Tilpasset dine systemer, regler og processer fra dag ét." },
+        { title: "Skalér efter behov", description: "Tilføj nye agenter og kapacitet, når din virksomhed vokser." },
+      ],
+      cta: "Book en gennemgang",
     },
     about: {
       eyebrow: "Om mig",
@@ -254,6 +287,8 @@ export const translations = {
       heading: "AI Solutions for your business",
       subtext:
         "Choose the solution that fits your needs — or combine several for full automation.",
+      expandHint: "Learn more",
+      videoSoon: "Explainer video coming soon",
       cards: [
         {
           key: "secretary",
@@ -261,6 +296,8 @@ export const translations = {
           title: "Secretary Agent",
           description:
             "Handles appointment scheduling, reminders, and correspondence automatically. Never miss an appointment again.",
+          deepDescription:
+            "The Secretary Agent acts as your digital administrative assistant, working around the clock. It receives enquiries, finds open slots in your calendar, and books appointments — without you lifting a finger.\n\nUnder the hood it syncs with your existing calendar and sends automatic reminders to both you and your clients, so nothing slips through. It follows up on unconfirmed bookings and reshuffles when cancellations happen.\n\nThe result: fewer double-bookings, fewer no-shows, and hours of admin work removed from your week.",
           capabilities: [
             "Automatic appointment booking",
             "Reminders for clients & you",
@@ -275,6 +312,8 @@ export const translations = {
           title: "Economy Manager Agent",
           description:
             "Automatic bookkeeping, expense tracking, and financial reports. Keep your finances in order without manual effort.",
+          deepDescription:
+            "The Economy Manager Agent keeps your business numbers in order, so you no longer gather receipts and key in entries by hand. It records income and expenses on the fly and categorises every transaction correctly.\n\nIt integrates with your accounting system and generates clear monthly reports, so you always know exactly where you stand. Irregularities are flagged before they become problems.\n\nThe result: an always up-to-date financial overview, a smaller accountant bill, and real peace of mind at quarter-end.",
           capabilities: [
             "Automatic categorisation",
             "Monthly financial reports",
@@ -289,6 +328,8 @@ export const translations = {
           title: "Website Chatbot",
           description:
             "An AI chatbot integrated directly on your website, answering customer enquiries 24/7 — with no waiting time.",
+          deepDescription:
+            "The chatbot lives right on your website and answers customer questions instantly — whether it's 2pm or 3am. It's trained on your content, your prices, and your processes, so the answers are always accurate.\n\nWhen an enquiry is too complex, it hands off seamlessly to you with full context, so the customer never has to repeat themselves. It speaks multiple languages and matches your brand tone.\n\nThe result: shorter response times, more converted visitors, and a support team that never sleeps.",
           capabilities: [
             "24/7 customer support",
             "Automatic FAQ responses",
@@ -303,6 +344,8 @@ export const translations = {
           title: "Email Assistant",
           description:
             "Reads and responds to incoming emails automatically in your brand's tone and style. You only receive the ones that need your attention.",
+          deepDescription:
+            "The Email Assistant reads every incoming message, understands the intent, and drafts a reply in your tone — ready to send, or sent fully automatically for routine enquiries.\n\nIt sorts and prioritises your inbox, so the important emails sit on top and the noise is filtered out. It integrates directly with Gmail or Outlook without changing how you work.\n\nThe result: an inbox that looks after itself, faster replies for your customers, and hours handed back for the work only you can do.",
           capabilities: [
             "Automatic email sorting",
             "Intelligent reply templates",
@@ -317,6 +360,8 @@ export const translations = {
           title: "No-show Follow-up",
           description:
             "Automatic follow-up on absent clients with friendly reminders and easy rebooking options. Reduce lost appointments.",
+          deepDescription:
+            "The No-show Agent automatically detects when a client doesn't turn up and immediately kicks off a friendly follow-up via SMS or email — without it feeling pushy.\n\nEvery message includes a direct link to book a new time, so the client easily lands back in your calendar. You also get statistics on no-shows and patterns over time.\n\nThe result: fewer empty slots, recovered revenue from otherwise lost appointments, and clients who feel seen rather than forgotten.",
           capabilities: [
             "Automatic no-show detection",
             "Friendly SMS/email reminders",
@@ -331,6 +376,8 @@ export const translations = {
           title: "Meeting Booker Agent",
           description:
             "Automatically books meetings based on participants' availability. From first enquiry to confirmed calendar invite — with zero manual effort.",
+          deepDescription:
+            "The Meeting Booker Agent takes over the entire back-and-forth of finding a time that works for everyone. It reads participants' availability, proposes slots, and sends a confirmed calendar invite.\n\nIt handles time zones, sends reminders before the meeting, and reschedules automatically on cancellations — without you touching a thing. Everything syncs with your existing calendar.\n\nThe result: no email threads about meeting times, fewer cancelled meetings, and a booking experience that makes you look polished.",
           capabilities: [
             "Automatic meeting scheduling",
             "Calendar integration",
@@ -345,6 +392,8 @@ export const translations = {
           title: "Google Reviews Agent",
           description:
             "Automate your business's Google reviews — send follow-ups to satisfied customers, respond to reviews, and keep your reputation sharp without lifting a finger.",
+          deepDescription:
+            "The Google Reviews Agent automatically asks your happy customers for a review at exactly the right moment — right after a great experience — via personalised SMS or email.\n\nWhen new reviews arrive, it drafts thoughtful replies in your tone, to both praise and criticism, so your profile always looks active and professional. It continuously monitors for new feedback.\n\nThe result: more and better reviews, a higher ranking in local search, and a stronger reputation that wins new customers for you.",
           capabilities: [
             "Automatic review request outreach",
             "Personalised follow-up SMS/email",
@@ -359,6 +408,8 @@ export const translations = {
           title: "LLM SEO Optimizer",
           description:
             "Make your business visible in ChatGPT, Gemini, and Google AI. We optimise your content so AI search engines recommend you when customers ask.",
+          deepDescription:
+            "More and more customers ask ChatGPT, Gemini, and Perplexity for recommendations instead of googling. LLM SEO Optimization makes sure it's your business the AI names when it's asked.\n\nWe structure your content with schema data, citable answers, and FAQ formats that language models prefer to draw on. Then we continuously monitor how your business is mentioned in AI answers.\n\nThe result: visibility in the new generation of search (GEO), qualified traffic from AI tools, and a head start before your competitors discover the channel.",
           capabilities: [
             "Optimised for ChatGPT, Gemini & Perplexity",
             "Structured data & FAQ schema",
@@ -373,6 +424,8 @@ export const translations = {
           title: "Leads Generator",
           description:
             "An AI agent that finds, qualifies, and contacts potential customers automatically — so your pipeline never runs dry.",
+          deepDescription:
+            "The Leads Generator works like a tireless salesperson: it finds prospects that match your ideal profile and qualifies them before they reach your desk.\n\nIt sends personalised outreach, follows up automatically until there's a reply, and drops warm leads straight into your CRM. You only spend time on the conversations that can actually close.\n\nThe result: a pipeline that fills itself, lower customer acquisition cost, and predictable growth month after month.",
           capabilities: [
             "Automatic lead sourcing",
             "Lead qualification",
@@ -403,6 +456,19 @@ export const translations = {
         },
       ],
       cta: "Tell us your idea",
+    },
+    controlSystem: {
+      eyebrow: "Our flagship",
+      title: "Tailored AI Control System",
+      description:
+        "One command center for every AI agent you run. See, steer, and scale your entire automation stack from a single tailored dashboard — built around your business, not a template.",
+      features: [
+        { title: "All agents, one dashboard", description: "Secretary, bookkeeper, chatbot and the rest — unified in one place." },
+        { title: "Real-time oversight", description: "Track every agent's activity and results as it happens." },
+        { title: "Built around your workflow", description: "Shaped to your systems, rules and processes from day one." },
+        { title: "Scale on demand", description: "Add new agents and capacity as your business grows." },
+      ],
+      cta: "Book a walkthrough",
     },
     about: {
       eyebrow: "About me",

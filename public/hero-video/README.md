@@ -4,8 +4,22 @@ Drop your b-roll here. The hero (`components/sections/Hero.tsx`) plays it full-b
 behind a frosted glass panel, dimmed for text legibility.
 
 ## Files this folder expects
-- `hero.mp4` — the background loop (required for video to show).
-- `poster.jpg` — a still first frame (shown before the video loads / on slow connections). Optional but recommended.
+- `HeroVid.mp4` — the desktop background loop (1280×720, ~1 MB).
+- `HeroVid.mobile.mp4` — a lighter copy (720×406, ~330 KB) served on screens ≤ 768px.
+- `poster.jpg` — a still first frame (shown before the video loads / on slow connections, and for reduce-motion users).
+
+The uncompressed 1080p source is kept at `../../video-source/HeroVid.original.mp4` (gitignored,
+local-only — it is **not** in `public/` so it never deploys).
+
+`Hero.tsx` automatically serves `HeroVid.mobile.mp4` on small screens via a `(max-width: 768px)`
+media query, falling back to the desktop file otherwise.
+
+### Re-compressing a new source (ffmpeg, run from project root)
+```
+ffmpeg -i video-source/HeroVid.original.mp4 -vf "scale=1280:-2" -c:v libx264 -crf 28 -preset slow -an -pix_fmt yuv420p -movflags +faststart public/hero-video/HeroVid.mp4
+ffmpeg -i video-source/HeroVid.original.mp4 -vf "scale=720:-2"  -c:v libx264 -crf 30 -preset slow -an -pix_fmt yuv420p -movflags +faststart public/hero-video/HeroVid.mobile.mp4
+ffmpeg -i video-source/HeroVid.original.mp4 -vf "scale=1280:-2" -frames:v 1 -q:v 3 public/hero-video/poster.jpg
+```
 
 ## One combined clip vs. several (recommended: ONE)
 For the smoothest result, **edit your 3–4 clips into a single ~15–30s seamless loop**

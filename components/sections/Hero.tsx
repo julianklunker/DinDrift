@@ -8,20 +8,36 @@ import { GlassPanel } from "@/components/ui/glass-panel"
 
 // Background b-roll. List one combined loop (recommended) OR several clips to
 // auto-cycle. Files live in /public/hero-video/ (see that folder's README).
-const HERO_VIDEOS = ["/hero-video/HeroVid.mp4"]
+// Each entry is a [desktop, mobile] pair — the lighter mobile file is served on
+// small screens to save data and improve mobile load time / Lighthouse.
+const HERO_VIDEOS = [
+  { desktop: "/hero-video/HeroVid.mp4", mobile: "/hero-video/HeroVid.mobile.mp4" },
+]
 
 export default function Hero() {
   const { t } = useLanguage()
   const [idx, setIdx] = useState(0)
   const [reducedMotion, setReducedMotion] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
   const multi = HERO_VIDEOS.length > 1
+  const current = HERO_VIDEOS[idx]
+  const videoSrc = isMobile ? current.mobile : current.desktop
 
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)")
     setReducedMotion(mq.matches)
     const handler = (e: MediaQueryListEvent) => setReducedMotion(e.matches)
     mq.addEventListener("change", handler)
-    return () => mq.removeEventListener("change", handler)
+
+    const mqMobile = window.matchMedia("(max-width: 768px)")
+    setIsMobile(mqMobile.matches)
+    const mobileHandler = (e: MediaQueryListEvent) => setIsMobile(e.matches)
+    mqMobile.addEventListener("change", mobileHandler)
+
+    return () => {
+      mq.removeEventListener("change", handler)
+      mqMobile.removeEventListener("change", mobileHandler)
+    }
   }, [])
 
   const scrollTo = (id: string) => {
@@ -34,7 +50,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 overflow-hidden bg-gradient-to-br from-blue-50 to-white">
         {!reducedMotion && (
           <video
-            key={HERO_VIDEOS[idx]}
+            key={videoSrc}
             className="absolute inset-0 w-full h-full object-cover"
             style={{ filter: "brightness(0.55)" }}
             autoPlay
@@ -48,7 +64,7 @@ export default function Hero() {
               if (multi) setIdx((i) => (i + 1) % HERO_VIDEOS.length)
             }}
           >
-            <source src={HERO_VIDEOS[idx]} type="video/mp4" />
+            <source src={videoSrc} type="video/mp4" />
           </video>
         )}
         {/* Legibility overlay */}
@@ -89,14 +105,14 @@ export default function Hero() {
           </motion.p>
 
           <motion.div
-            className="flex flex-row justify-center gap-3 sm:gap-4 items-center mt-8 sm:mt-10 md:mt-12"
+            className="flex flex-row flex-wrap justify-center gap-3 sm:gap-4 items-center mt-8 sm:mt-10 md:mt-12"
             animate={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.2, ease: "easeOut", delay: 0.7 }}
           >
             <motion.button
               onClick={() => scrollTo("solutions")}
-              className="text-sm sm:text-base md:text-lg font-semibold tracking-tight text-background bg-foreground px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full shadow-2xl"
+              className="text-sm sm:text-base md:text-lg font-semibold tracking-tight text-background bg-foreground px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full shadow-2xl min-h-[44px]"
               whileHover={{
                 scale: 1.05,
                 transition: { type: "spring", damping: 30, stiffness: 400 },
@@ -107,7 +123,7 @@ export default function Hero() {
 
             <motion.button
               onClick={() => scrollTo("contact")}
-              className="text-sm sm:text-base md:text-lg font-semibold tracking-tight text-white bg-[#0015ff] px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full shadow-2xl"
+              className="text-sm sm:text-base md:text-lg font-semibold tracking-tight text-white bg-[#0015ff] px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full shadow-2xl min-h-[44px]"
               whileHover={{
                 scale: 1.05,
                 transition: { type: "spring", damping: 30, stiffness: 400 },
