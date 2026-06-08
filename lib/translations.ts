@@ -11,6 +11,11 @@ export const translations = {
       faq: "FAQ",
       contact: "Kontakt",
     },
+    booking: {
+      cta: "Book et gratis møde",
+      kontaktHeading: "Eller book direkte i kalenderen",
+      kontaktSub: "Vælg et tidspunkt der passer dig — 30 min, gratis og uforpligtende.",
+    },
     hero: {
       prefix: "Dine nye AI",
       rotatingTexts: [
@@ -212,6 +217,7 @@ export const translations = {
         { title: "Skalér efter behov", description: "Tilføj nye agenter og kapacitet, når din virksomhed vokser." },
       ],
       cta: "Book en gennemgang",
+      seeDetails: "Se detaljer",
     },
     about: {
       eyebrow: "Om mig",
@@ -267,6 +273,11 @@ export const translations = {
       blog: "Blog",
       faq: "FAQ",
       contact: "Contact",
+    },
+    booking: {
+      cta: "Book a free call",
+      kontaktHeading: "Or book directly in the calendar",
+      kontaktSub: "Pick a time that suits you — 30 min, free and no obligation.",
     },
     hero: {
       prefix: "Your new AI",
@@ -469,6 +480,7 @@ export const translations = {
         { title: "Scale on demand", description: "Add new agents and capacity as your business grows." },
       ],
       cta: "Book a walkthrough",
+      seeDetails: "See details",
     },
     about: {
       eyebrow: "About me",
