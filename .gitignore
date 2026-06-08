@@ -40,3 +40,8 @@ next-env.d.ts
 
 # Local-only uncompressed video backups (not deployed)
 video-source/
+
+# Lead-gen drafter — personal data, never commit
+scripts/leadgen/prospects.csv
+scripts/leadgen/drafts/
+scripts/leadgen/sent-log.csv

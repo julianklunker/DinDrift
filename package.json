@@ -12,7 +12,9 @@
     "typecheck": "tsc --noEmit",
     "social:auth": "node scripts/social/auth-linkedin.mjs",
     "social:post": "node scripts/social/post.mjs",
-    "social:draft": "node scripts/social/post.mjs --dry-run"
+    "social:draft": "node scripts/social/post.mjs --dry-run",
+    "leadgen:draft": "node scripts/leadgen/draft.mjs --dry-run",
+    "leadgen:run": "node scripts/leadgen/draft.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.96.0",
