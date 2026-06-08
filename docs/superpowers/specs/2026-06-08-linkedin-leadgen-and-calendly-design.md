@@ -52,6 +52,7 @@ Reuse `scripts/social/lib/env.mjs` if practical (import across folders) rather t
 | `observation` | yes | **personalization hook** — something specific Julian noticed (recent post, booking page, hiring a receptionist). Rows missing this are **skipped with a warning** — it is what keeps messages non-spammy and GDPR-defensible. |
 | `lang` | no | `da` (default) or `en` |
 | `angle` | no | optional service to lean on (e.g. "no-show follow-up", "Google Reviews") |
+| `segment` | no | `solo` (single-person company) or `smb`; auto-inferred from `role`/`company` when blank, steers tone (see drafting rules) |
 
 A `prospects.example.csv` (committed) documents the schema with sample rows.
 
@@ -66,6 +67,7 @@ A `prospects.example.csv` (committed) documents the schema with sample rows.
 - **Offer rotation:** default to the free audit; mix in the pilot-build angle for roughly 1 in 4 prospects (deterministic by row index so output is reproducible, not random — `Math.random` is avoided). `angle` column, when present, steers which service the message emphasizes.
 - **Hard guardrails (reuse social toolkit's):** never fabricate clients / testimonials / results; never claim an agent was "already built" for them; match DinDrift voice — brand `#0015ff`, "The limit is your imagination", direct-line-to-Julian, 1–2 week delivery, SMB pricing from DKK 5,000.
 - **Language:** Danish by default; per-row `lang=en` override; global `--lang` override.
+- **Single-person companies (solopreneurs / freelancers / independent consultants):** an explicitly supported segment (the strategy's B2C secondary focus). The prompt detects a solo prospect (e.g. `role` = "Selvstændig"/"Freelancer"/"Indehaver", or a one-person `company`) and shifts tone accordingly: emphasize **time reclaimed** and **affordable entry** ("enterprise-level automation, SMB pricing"), avoid team/ops language that assumes staff, and lean toward lightweight wins (inbox/email assistant, booking, follow-up) over heavy multi-agent systems. The free-audit offer stays primary for solos (low friction, price-sensitive). An optional `segment` CSV column (`solo` | `smb`, auto-inferred when blank) lets Julian force the framing per row.
 
 ### CLI flags
 - `--dry-run` — generate + print only (default-safe; matches social toolkit).
