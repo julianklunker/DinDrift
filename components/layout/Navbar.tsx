@@ -5,6 +5,7 @@ import { useLanguage } from "@/lib/LanguageContext"
 import Link from "next/link"
 import Image from "next/image"
 import { usePathname } from "next/navigation"
+import CalendlyButton from "@/components/booking/CalendlyButton"
 
 export default function Navbar() {
   const { language, setLanguage, t } = useLanguage()
@@ -83,6 +84,9 @@ export default function Navbar() {
             >
               {t.nav.contact}
             </Link>
+          </li>
+          <li>
+            <CalendlyButton className="text-sm font-semibold text-white bg-[#0015ff] px-4 py-2 rounded-full hover:opacity-90 transition-opacity min-h-[40px]" />
           </li>
         </ul>
 

@@ -4,6 +4,7 @@ import { useState, useRef, FormEvent } from "react"
 import { motion } from "motion/react"
 import emailjs from "@emailjs/browser"
 import { useLanguage } from "@/lib/LanguageContext"
+import CalendlyButton from "@/components/booking/CalendlyButton"
 
 type FormState = "idle" | "sending" | "success" | "error"
 
@@ -75,6 +76,10 @@ export default function Contact() {
             {c.subtext}
           </p>
         </motion.div>
+
+        <div className="flex justify-center mb-12">
+          <CalendlyButton />
+        </div>
 
         <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Left: info */}

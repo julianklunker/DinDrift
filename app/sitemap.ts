@@ -6,6 +6,7 @@ const BASE = "https://dindrift.com"
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: `${BASE}/`, changeFrequency: "weekly", priority: 1 },
+    { url: `${BASE}/ai-control-system`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/priser`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${BASE}/faq`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${BASE}/blog`, changeFrequency: "weekly", priority: 0.7 },
