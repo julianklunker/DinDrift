@@ -45,3 +45,10 @@ video-source/
 scripts/leadgen/prospects.csv
 scripts/leadgen/drafts/
 scripts/leadgen/sent-log.csv
+
+# Internal strategy docs + personal media — repo is PUBLIC, keep these local
+# (remove from here if the repo is made private)
+DINDRIFT-GROWTH-PLAN.md
+CHANGELOG-GROWTH.md
+marketing/
+public/CV billede.jpg

@@ -3,8 +3,9 @@ import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 
 export const metadata: Metadata = {
-  title: "Privatlivspolitik — DinDrift",
+  title: "Privatlivspolitik",
   description: "Læs om, hvordan DinDrift behandler dine personoplysninger i overensstemmelse med GDPR.",
+  alternates: { canonical: "/privatlivspolitik" },
 }
 
 export default function PrivatlivspolitikPage() {

@@ -1,7 +1,7 @@
 "use client"
 
-import { useEffect, useState } from "react"
-import { motion } from "motion/react"
+import { useEffect, useRef, useState } from "react"
+import { motion, useInView } from "motion/react"
 import { MeshGradient } from "@paper-design/shaders-react"
 import { useLanguage } from "@/lib/LanguageContext"
 
@@ -10,6 +10,10 @@ export default function Custom() {
   const c = t.custom
   const [dimensions, setDimensions] = useState({ width: 1200, height: 600 })
   const [mounted, setMounted] = useState(false)
+  // The WebGL shader only mounts once the section approaches the viewport —
+  // compiling it during initial load blocks the main thread for no visible gain.
+  const sectionRef = useRef<HTMLElement>(null)
+  const inView = useInView(sectionRef, { once: true, margin: "300px" })
 
   useEffect(() => {
     setMounted(true)
@@ -25,10 +29,10 @@ export default function Custom() {
   }
 
   return (
-    <section className="py-24 md:py-32 px-6 text-white overflow-hidden relative">
+    <section ref={sectionRef} className="py-24 md:py-32 px-6 text-white overflow-hidden relative">
       {/* Aurora background */}
       <div className="absolute inset-0 w-full h-full">
-        {mounted && (
+        {mounted && inView && (
           <MeshGradient
             width={dimensions.width}
             height={dimensions.height}

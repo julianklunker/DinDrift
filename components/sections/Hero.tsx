@@ -5,25 +5,35 @@ import { LayoutGroup, motion } from "motion/react"
 import { useLanguage } from "@/lib/LanguageContext"
 import { TextRotate } from "@/components/ui/text-rotate"
 import { GlassPanel } from "@/components/ui/glass-panel"
+import CalendlyButton from "@/components/booking/CalendlyButton"
 
 // Background b-roll. List one combined loop (recommended) OR several clips to
 // auto-cycle. Files live in /public/hero-video/ (see that folder's README).
-// Each entry is a [desktop, mobile] pair — the lighter mobile file is served on
-// small screens to save data and improve mobile load time / Lighthouse.
-const HERO_VIDEOS = [
-  { desktop: "/hero-video/HeroVid.mp4", mobile: "/hero-video/HeroVid.mobile.mp4" },
-]
+// The video only plays on desktop — mobile gets the static poster instead:
+// an autoplaying video wrecks mobile Speed Index and costs visitors ~335 KB
+// of data for a decorative background.
+const HERO_VIDEOS = [{ desktop: "/hero-video/HeroVid.mp4" }]
+const HERO_POSTER = "/hero-video/poster.jpg"
 
 export default function Hero() {
   const { t } = useLanguage()
   const [idx, setIdx] = useState(0)
   const [reducedMotion, setReducedMotion] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
+  // Video mounts only after hydration: SSR can't know the viewport, and the
+  // poster <img> below paints from the first server-rendered frame either way.
+  const [mounted, setMounted] = useState(false)
+  // The word rotation starts after a few idle seconds: its per-letter spring
+  // animations are heavy on throttled mobile CPUs and would otherwise run
+  // during initial load.
+  const [rotateActive, setRotateActive] = useState(false)
   const multi = HERO_VIDEOS.length > 1
-  const current = HERO_VIDEOS[idx]
-  const videoSrc = isMobile ? current.mobile : current.desktop
+  const videoSrc = HERO_VIDEOS[idx].desktop
+  const showVideo = mounted && !reducedMotion && !isMobile
 
   useEffect(() => {
+    setMounted(true)
+    const rotateTimer = setTimeout(() => setRotateActive(true), 5000)
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)")
     setReducedMotion(mq.matches)
     const handler = (e: MediaQueryListEvent) => setReducedMotion(e.matches)
@@ -35,6 +45,7 @@ export default function Hero() {
     mqMobile.addEventListener("change", mobileHandler)
 
     return () => {
+      clearTimeout(rotateTimer)
       mq.removeEventListener("change", handler)
       mqMobile.removeEventListener("change", mobileHandler)
     }
@@ -46,9 +57,20 @@ export default function Hero() {
 
   return (
     <section className="w-full h-screen overflow-hidden flex flex-col items-center justify-center relative">
-      {/* Background video layer */}
+      {/* Background layer: poster paints with the first frame; the video
+          replaces it on desktop once hydrated. */}
       <div className="absolute inset-0 z-0 overflow-hidden bg-gradient-to-br from-blue-50 to-white">
-        {!reducedMotion && (
+        {!showVideo && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={HERO_POSTER}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ filter: "brightness(0.55)" }}
+            aria-hidden="true"
+          />
+        )}
+        {showVideo && (
           <video
             key={videoSrc}
             className="absolute inset-0 w-full h-full object-cover"
@@ -58,7 +80,7 @@ export default function Hero() {
             loop={!multi}
             playsInline
             preload="metadata"
-            poster="/hero-video/poster.jpg"
+            poster={HERO_POSTER}
             aria-hidden="true"
             onEnded={() => {
               if (multi) setIdx((i) => (i + 1) % HERO_VIDEOS.length)
@@ -74,12 +96,10 @@ export default function Hero() {
       {/* Center content (inside frosted glass so text stays legible over the video) */}
       <GlassPanel className="z-50 px-6 py-8 sm:px-10 sm:py-10 md:px-14 md:py-12 pointer-events-auto">
         <div className="flex flex-col justify-center items-center w-[250px] sm:w-[300px] md:w-[500px] lg:w-[700px]">
-          <motion.h1
-            className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-center w-full justify-center items-center flex-col flex whitespace-pre leading-tight font-semibold tracking-tight space-y-1 md:space-y-4"
-            animate={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 20 }}
-            transition={{ duration: 0.2, ease: "easeOut", delay: 0.3 }}
-          >
+          {/* No entrance animation on the headline/subtext: they must paint
+              with the first server-rendered frame so the hero text is the LCP
+              element (an opacity-0 initial state hides them until hydration). */}
+          <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-center w-full justify-center items-center flex-col flex whitespace-pre leading-tight font-semibold tracking-tight space-y-1 md:space-y-4">
             <span>{t.hero.prefix} </span>
             <LayoutGroup>
               <motion.span layout className="flex whitespace-pre">
@@ -89,20 +109,17 @@ export default function Hero() {
                   staggerDuration={0.03}
                   staggerFrom="last"
                   rotationInterval={3000}
+                  auto={rotateActive}
+                  initial={false}
                   transition={{ type: "spring", damping: 30, stiffness: 400 }}
                 />
               </motion.span>
             </LayoutGroup>
-          </motion.h1>
+          </h1>
 
-          <motion.p
-            className="text-sm sm:text-base md:text-lg lg:text-xl text-center text-muted-foreground pt-4 sm:pt-6 md:pt-8 max-w-md"
-            animate={{ opacity: 1, y: 0 }}
-            initial={{ opacity: 0, y: 20 }}
-            transition={{ duration: 0.2, ease: "easeOut", delay: 0.5 }}
-          >
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center text-muted-foreground pt-4 sm:pt-6 md:pt-8 max-w-md">
             {t.hero.subtext}
-          </motion.p>
+          </p>
 
           <motion.div
             className="flex flex-row flex-wrap justify-center gap-3 sm:gap-4 items-center mt-8 sm:mt-10 md:mt-12"
@@ -131,6 +148,8 @@ export default function Hero() {
             >
               {t.hero.btnContact}
             </motion.button>
+
+            <CalendlyButton className="text-sm sm:text-base md:text-lg font-semibold tracking-tight text-[#0015ff] bg-white px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full shadow-2xl min-h-[44px]" />
           </motion.div>
         </div>
       </GlassPanel>

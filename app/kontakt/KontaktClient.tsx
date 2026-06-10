@@ -7,6 +7,8 @@ import { trackLead } from "@/lib/fbpixel"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import Link from "next/link"
+import CalendlyInline from "@/components/booking/CalendlyInline"
+import { useLanguage } from "@/lib/LanguageContext"
 
 type FormState = "idle" | "sending" | "success" | "error"
 
@@ -58,6 +60,7 @@ const inputClass =
   "w-full bg-muted/50 border border-border rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-[#0015ff]/40 transition-all"
 
 export default function KontaktClient() {
+  const { t } = useLanguage()
   const formRef = useRef<HTMLFormElement>(null)
   const [formState, setFormState] = useState<FormState>("idle")
 
@@ -87,32 +90,19 @@ export default function KontaktClient() {
       {/* Hero */}
       <section className="pt-32 pb-16 px-6 bg-gradient-to-b from-muted/40 to-background">
         <div className="max-w-3xl mx-auto text-center">
-          <motion.p
-            className="text-sm font-medium text-[#0015ff] uppercase tracking-widest mb-3"
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-          >
+          {/* Above-the-fold: no entrance animation — the headline/intro must
+              paint with the first server-rendered frame (LCP). */}
+          <p className="text-sm font-medium text-[#0015ff] uppercase tracking-widest mb-3">
             Gratis &amp; uforpligtende
-          </motion.p>
-          <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-foreground mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, delay: 0.05 }}
-          >
+          </p>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-foreground mb-6">
             Lad os tage en snak
-          </motion.h1>
-          <motion.p
-            className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.45, delay: 0.1 }}
-          >
+          </h1>
+          <p className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto">
             Har du spørgsmål til, hvad AI-automatisering kan gøre for din virksomhed? Udfyld formularen eller skriv direkte til os — det er{" "}
             <strong className="text-foreground font-semibold">helt gratis og uforpligtende</strong>.
             Vi vender tilbage inden for 24 timer.
-          </motion.p>
+          </p>
         </div>
       </section>
 
@@ -323,6 +313,19 @@ export default function KontaktClient() {
               </form>
             )}
           </motion.div>
+        </div>
+      </section>
+
+      {/* Book directly via Calendly */}
+      <section className="pb-24 px-6">
+        <div className="max-w-3xl mx-auto text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-foreground mb-3">
+            {t.booking.kontaktHeading}
+          </h2>
+          <p className="text-muted-foreground text-sm md:text-base">{t.booking.kontaktSub}</p>
+        </div>
+        <div className="max-w-3xl mx-auto">
+          <CalendlyInline />
         </div>
       </section>
 

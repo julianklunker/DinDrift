@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
-import Script from "next/script"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -9,39 +8,47 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { LanguageProvider } from "@/lib/LanguageContext"
 import { cn } from "@/lib/utils"
 import CookieBanner from "@/components/CookieBanner"
-import MetaPixel from "@/components/MetaPixel"
+import ConsentScripts from "@/components/ConsentScripts"
 import { JsonLd, organizationSchema, localBusinessSchema } from "@/components/StructuredData"
 
-const geist = Geist({ subsets: ["latin"], variable: "--font-sans" })
+// display "optional": if the webfont isn't ready within ~100ms the
+// metric-adjusted fallback stays for that view — avoids the late font-swap
+// repaint that otherwise becomes the page's LCP on throttled mobile.
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans", display: "optional" })
 
 const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
+  display: "optional",
+  // Not part of first-paint typography — don't let it compete for pre-FCP bandwidth.
+  preload: false,
 })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dindrift.com"),
   title: {
-    default: "DinDrift — AI Automation & AI Agents for Your Business",
-    template: "%s — DinDrift",
+    default: "AI-sekretær & AI-automatisering | DinDrift",
+    template: "%s | DinDrift",
   },
   description:
-    "Intelligent AI agents tailored to your business. Secretary, bookkeeper, chatbot, email assistant and no-show follow-up.",
+    "DinDrift bygger AI-agenter til danske virksomheder: AI-sekretær der besvarer opkald og mails, booker tider og følger op — fast månedspris, 0 kr i opstart.",
   keywords: [
-    "AI automation",
-    "AI agents",
-    "AI secretary",
-    "AI bookkeeper",
-    "website chatbot",
-    "AI email assistant",
-    "no-show follow-up",
-    "automation for SMBs",
-    "AI automation Denmark",
-    "AI agents for business",
+    "ai sekretær",
+    "ai receptionist",
+    "ai telefonpasning",
+    "virtuel receptionist dansk",
+    "automatisk telefonsvarer der booker tider",
+    "telefonpasning lille virksomhed",
+    "ai automatisering danmark",
+    "ai agenter til virksomheder",
+    "automatisering af opgaver virksomhed",
+    "ai til smv",
   ],
   authors: [{ name: "Julian Zachar-Fink" }],
   creator: "DinDrift",
-  alternates: { canonical: "/" },
+  verification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION }
+    : undefined,
   icons: {
     icon: "/dindriftlogosmall.png",
     shortcut: "/dindriftlogosmall.png",
@@ -49,20 +56,20 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    alternateLocale: "da_DK",
+    locale: "da_DK",
+    alternateLocale: "en_US",
     url: "https://dindrift.com",
     siteName: "DinDrift",
-    title: "DinDrift — AI Automation & AI Agents for Your Business",
+    title: "AI-sekretær & AI-automatisering | DinDrift",
     description:
-      "Intelligent AI agents tailored to your business — automate the tedious tasks and focus on what really matters.",
-    images: [{ url: "/dindriftlogo.png", alt: "DinDrift — AI Automation" }],
+      "Intelligente AI-agenter skræddersyet til din virksomhed — automatiser de trivielle opgaver og fokuser på det, der betyder noget.",
+    images: [{ url: "/dindriftlogo.png", alt: "DinDrift — AI-automatisering" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "DinDrift — AI Automation & AI Agents",
+    title: "AI-sekretær & AI-automatisering | DinDrift",
     description:
-      "Intelligent AI agents tailored to your business. Automate the routine, win back your time.",
+      "Intelligente AI-agenter skræddersyet til din virksomhed. Automatiser rutinerne, vind din tid tilbage.",
     images: ["/dindriftlogo.png"],
   },
 }
@@ -74,26 +81,12 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="da"
       suppressHydrationWarning
       className={cn("antialiased", fontMono.variable, "font-sans", geist.variable)}
     >
       <head>
         <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site information" />
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-18195313302"
-          strategy="afterInteractive"
-        />
-        <Script id="gtag-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-18195313302');
-          `}
-        </Script>
-        <MetaPixel />
         <JsonLd data={[organizationSchema, localBusinessSchema]} />
       </head>
       <body>
@@ -103,6 +96,7 @@ export default function RootLayout({
             <CookieBanner />
           </ThemeProvider>
         </LanguageProvider>
+        <ConsentScripts />
         <Analytics />
         <SpeedInsights />
       </body>

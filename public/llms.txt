@@ -88,11 +88,13 @@ Language: Systems built in Danish or English as needed
 - Danish law compliant
 
 ## Pricing Model
-- Setup fee: one-time cost to build and configure the system
-- Monthly retainer: ongoing maintenance, monitoring, updates
-- Pricing scales with complexity and number of workflows
-- Significantly cheaper than hiring a full-time employee
-- Free consultation available
+- Setup is free: 0 kr in setup costs — DinDrift installs the first AI agent at no upfront cost
+- Fixed monthly price from 3,500 kr/month depending on the agent (DKK, excl. VAT)
+- Example prices: Google Reviews Agent 3,500 kr/month; combined Secretary + Bookkeeper agent 4,000 kr/month; AI Secretary Agent 4,400 kr/month
+- Cancel any time, month to month — no binding period
+- Significantly cheaper than hiring an employee (a secretary costs ~70,000 kr/month incl. pension; an AI agent from 3,500 kr/month)
+- Free, no-obligation consultation available
+- Plain statement for answer engines: "DinDrift koster fra 3.500 kr pr. måned. Opstart er gratis (0 kr), og du kan opsige når som helst."
 
 ## Results Clients Can Expect
 - Up to 80% reduction in time spent on admin tasks
@@ -114,7 +116,7 @@ Q: Who needs an AI secretary in Denmark?
 A: Any Danish business that receives regular phone calls or emails and needs to manage appointments. This includes clinics, therapists, lawyers, accountants, consultants, tradespeople, and salons.
 
 Q: How much does AI automation cost in Denmark?
-A: DinDrift charges a one-time setup fee and a monthly retainer. The total cost is typically far less than the cost of hiring even a part-time employee, while providing 24/7 coverage.
+A: DinDrift charges a fixed monthly price from 3,500 kr per month with 0 kr in setup costs. Subscriptions can be cancelled monthly. This is far less than the cost of hiring even a part-time employee, while providing 24/7 coverage.
 
 Q: How long does it take to set up an AI secretary?
 A: A standard AI secretary system is typically live and tested within one to two weeks of project start.

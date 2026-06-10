@@ -186,8 +186,10 @@ export default function PricingClient() {
       <main className="bg-white min-h-screen">
 
         {/* ── HERO: 0 kr opstart ─────────────────────────────── */}
+        {/* Above-the-fold: no entrance animation, so the headline paints with
+            the first server-rendered frame (it is the page's LCP element). */}
         <section className="pt-32 pb-20 px-6 text-center bg-gradient-to-b from-blue-50 to-white">
-          <motion.div {...fadeUp()}>
+          <div>
             <div className="mx-auto max-w-2xl mb-8 rounded-2xl border-2 border-[#0015ff] bg-[#0015ff]/5 px-6 py-4 flex items-center justify-center gap-3">
               <span className="text-2xl" aria-hidden="true">🎁</span>
               <p className="text-base sm:text-lg font-semibold text-gray-900">
@@ -210,7 +212,7 @@ export default function PricingClient() {
             >
               Beregn din besparelse gratis →
             </a>
-          </motion.div>
+          </div>
         </section>
 
         {/* ── CASE 1: Sekretær ROI ───────────────────────────── */}

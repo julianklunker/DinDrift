@@ -14,7 +14,7 @@ const LanguageContext = createContext<LanguageContextType | null>(null)
 const STORAGE_KEY = "dindrift-language"
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>("en")
+  const [language, setLanguageState] = useState<Language>("da")
 
   // Restore the visitor's saved choice on mount (client-side only).
   useEffect(() => {

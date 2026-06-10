@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import { motion } from "motion/react"
 import Navbar from "@/components/layout/Navbar"
 import Footer from "@/components/layout/Footer"
 import { useLanguage } from "@/lib/LanguageContext"
@@ -31,21 +30,19 @@ export default function BlogIndexClient() {
 
       <section className="pb-20 px-6">
         <div className="max-w-4xl mx-auto flex flex-col gap-6">
-          {posts.map((post, i) => {
+          {posts.map((post) => {
             const content = post[language]
             const dateStr = new Date(post.date).toLocaleDateString(language === "da" ? "da-DK" : "en-GB", {
               year: "numeric",
               month: "long",
               day: "numeric",
             })
+            // No entrance animation: the first card is above the fold and
+            // must paint with the first server-rendered frame (LCP).
             return (
-              <motion.article
+              <article
                 key={post.slug}
                 className="border border-border rounded-2xl bg-background p-6 md:p-8 hover:shadow-lg transition-shadow"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.08 }}
               >
                 <p className="text-xs text-muted-foreground uppercase tracking-widest mb-2">{dateStr}</p>
                 <h2 className="text-2xl font-semibold tracking-tight text-foreground mb-3">
@@ -57,7 +54,7 @@ export default function BlogIndexClient() {
                 <Link href={`/blog/${post.slug}`} className="text-sm font-semibold text-[#0015ff] hover:underline">
                   {c.read} →
                 </Link>
-              </motion.article>
+              </article>
             )
           })}
         </div>

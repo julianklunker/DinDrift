@@ -27,6 +27,8 @@ export default function CookieBanner() {
     localStorage.setItem(COOKIE_KEY, "accepted")
     setStatus("accepted")
     setVisible(false)
+    // Tells ConsentScripts to load the marketing/analytics tags.
+    window.dispatchEvent(new CustomEvent("dindrift-consent", { detail: "accepted" }))
   }
 
   const handleDecline = () => {
@@ -68,11 +70,11 @@ export default function CookieBanner() {
             </div>
           </div>
 
-          {/* Details */}
+          {/* Details — kept short so this block stays smaller than the hero
+              headline and never becomes the page's LCP element. */}
           <p className="text-xs text-muted-foreground leading-relaxed">
-            Ved at klikke <strong className="text-foreground">&ldquo;Acceptér&rdquo;</strong> giver du samtykke til brugen af funktionelle cookies
-            og eventuel anonym trafikanalyse. Du kan til enhver tid trække dit samtykke tilbage.
-            Læs mere i vores{" "}
+            Med <strong className="text-foreground">&ldquo;Acceptér&rdquo;</strong> samtykker du til funktionelle cookies og anonym
+            trafikanalyse. Læs mere i vores{" "}
             <Link href="/privatlivspolitik" className="underline hover:text-foreground transition-colors">
               privatlivspolitik
             </Link>
