@@ -2,7 +2,7 @@
 
 *Everything below is ready to paste straight into your Google Business Profile at [business.google.com](https://business.google.com). Work top to bottom — the sections follow the order Google walks you through during setup.*
 
-> **Location confirmed:** Aalborg, Denmark (matches dindrift.dk) + nationwide remote delivery.
+> **Location confirmed:** Aalborg, Denmark (matches dindrift.com) + nationwide remote delivery.
 > **Phone confirmed:** +45 29 72 26 04 (public).
 
 ---
@@ -14,8 +14,8 @@
 | **Business name** | `DinDrift` |
 | **Primary category** | `Software Company` |
 | **Phone** | `+45 29 72 26 04` |
-| **Website** | `https://dindrift.dk` |
-| **Appointment link** | `https://dindrift.dk/kontakt` |
+| **Website** | `https://dindrift.com` |
+| **Appointment link** | `https://dindrift.com/kontakt` |
 | **Email (for contact)** | `dindriftai@gmail.com` |
 
 ### Additional categories (add all four)
@@ -68,7 +68,7 @@ DinDrift builds custom AI agents that automate the repetitive tasks draining you
 
 We design, build, and maintain AI agents that work 24/7 in your brand's voice, integrate with your existing tools (Google Calendar, Outlook, E-conomic, Billy, and more), and deliver measurable results from day one.
 
-From solo businesses to 50-person teams across Aalborg and all of Denmark. Free 30-minute discovery call. Fast 1–2 week delivery. Direct line to Julian — no ticket queues.
+From solo businesses to 50-person teams across Aalborg and all of Denmark. Free 30-minute discovery call. 1–2 week delivery. First month free — happy, or you don't pay. Direct line to Julian.
 
 The limit is your imagination.
 ```
@@ -78,25 +78,25 @@ The limit is your imagination.
 ## 5. SERVICES
 *(Add each as a separate service under your primary category. Name + description + price.)*
 
-**1. Secretary Agent — AI Appointment Booking** · *From DKK 5,000*
+**1. Secretary Agent — AI Appointment Booking** · *From DKK 3,500/month — first month free*
 > An AI agent that handles appointment scheduling, confirmations, and client correspondence 24/7. Syncs with Google Calendar or Outlook. Ideal for clinics, consultants, and service businesses tired of back-and-forth booking emails.
 
-**2. Economy Manager Agent — AI Bookkeeping Automation** · *From DKK 5,000*
+**2. Economy Manager Agent — AI Bookkeeping Automation** · *From DKK 3,500/month — first month free*
 > Automates bookkeeping data entry, expense categorisation, and financial reporting. Integrates with Danish accounting tools including E-conomic, Billy, and Dinero — saving hours of manual work every month.
 
-**3. Website Chatbot — 24/7 AI Customer Service** · *From DKK 5,000*
+**3. Website Chatbot — 24/7 AI Customer Service** · *From DKK 3,500/month — first month free*
 > A custom AI chatbot embedded on your website. Answers FAQs around the clock, qualifies incoming leads, and escalates complex queries to a human. Never miss a potential customer again.
 
-**4. Email Assistant — Inbox Automation** · *From DKK 5,000*
+**4. Email Assistant — Inbox Automation** · *From DKK 3,500/month — first month free*
 > An AI agent that monitors your inbox, auto-sorts incoming emails, drafts replies in your brand's tone, and flags only the emails that truly need your attention. Reclaim hours lost to inbox management.
 
-**5. No-Show Follow-Up Agent — Recover Lost Revenue** · *From DKK 5,000*
+**5. No-Show Follow-Up Agent — Recover Lost Revenue** · *From DKK 3,500/month — first month free*
 > Detects missed appointments automatically and sends personalised SMS or email follow-ups with a rebooking link — recovering revenue that would otherwise be lost. Built for clinics, salons, studios, and consultants.
 
-**6. Google Reviews Agent — Reputation Management** · *From DKK 5,000*
+**6. Google Reviews Agent — Reputation Management** · *From DKK 3,500/month — first month free*
 > After every completed service, automatically sends personalised review requests via SMS or email. Monitors incoming Google reviews and prepares AI-drafted responses for you to approve. More 5-star reviews, less manual effort.
 
-**7. Meeting Booker Agent — Automated Scheduling** · *From DKK 5,000*
+**7. Meeting Booker Agent — Automated Scheduling** · *From DKK 3,500/month — first month free*
 > Takes inbound meeting requests via chat, email, or web form and books confirmed calendar slots automatically — handling timezone differences and cancellations without any manual coordination.
 
 **8. Custom AI Agent — Any Workflow, Any Industry** · *Quoted per project*
@@ -117,7 +117,7 @@ Custom AI agents that automate the busywork — built for Danish SMBs, delivered
 *(Turn on chat under Messages → enable → set this welcome message.)*
 
 ```
-Hi, thanks for reaching out to DinDrift! 👋 Tell us a bit about your business and the tasks you'd love to automate, and Julian will reply within 24 hours. Prefer a call? Book a free 30-min discovery call at dindrift.dk/kontakt.
+Hi, thanks for reaching out to DinDrift! 👋 Tell us a bit about your business and the tasks you'd love to automate, and Julian will reply within 24 hours. Prefer a call? Book a free 30-min discovery call at dindrift.com/kontakt.
 ```
 
 ---
@@ -132,13 +132,13 @@ A: We work with small and medium businesses across Aalborg and all of Denmark �
 A: Most agents are built and deployed within 1–2 weeks of a confirmed project brief. We build focused, purpose-built solutions — not bloated software platforms.
 
 **Q: Do you offer a free consultation?**
-A: Yes. Every project starts with a free 30-minute discovery call where we identify your highest-value automation opportunity. No commitment required. Book via dindrift.dk or email dindriftai@gmail.com.
+A: Yes. Every project starts with a free 30-minute discovery call where we identify your highest-value automation opportunity. No commitment required. Book via dindrift.com or email dindriftai@gmail.com.
 
 **Q: What tools and systems do you integrate with?**
 A: We integrate with Google Workspace, Microsoft 365, E-conomic, Billy, Dinero, Podio, Twilio (SMS), and most major CRM and booking platforms. If you use a specific tool, ask us — we'll let you know if we can connect to it.
 
 **Q: What does an AI agent cost?**
-A: Single agents start from DKK 5,000 setup + DKK 500–1,000/month maintenance. Bundles of 2–3 agents start from DKK 15,000. Transparent flat pricing — no hidden subscription fees or per-user charges.
+A: A fixed monthly price from DKK 3,500/month with DKK 0 in setup costs. Your first month is free — if you're not happy, you don't pay. Cancel any time, no binding. Transparent flat pricing — no hidden fees or per-user charges.
 
 **Q: Do you only serve businesses in Aalborg?**
 A: Aalborg is our home base, but delivery is fully remote. We work with Danish businesses nationwide and can serve Scandinavian or European clients in English or Danish.
@@ -150,22 +150,22 @@ A: Aalborg is our home base, but delivery is fully remote. We work with Danish b
 **Post 1 — Introduction**
 Headline: *Stop doing tasks AI can do for you.*
 > DinDrift builds custom AI agents for Danish businesses — from automated appointment booking to 24/7 customer service chatbots. We integrate with your existing tools and deliver in 1–2 weeks. Book your free 30-minute discovery call today.
-> **Button:** Book → https://dindrift.dk/kontakt
+> **Button:** Book → https://dindrift.com/kontakt
 
 **Post 2 — Inbox angle**
 Headline: *What if your inbox managed itself?*
-> Our Email Assistant AI reads, sorts, and drafts replies in your brand's voice — so you only see the emails that truly need you. Reclaim hours every week. Starting from DKK 5,000.
-> **Button:** Learn more → https://dindrift.dk
+> Our Email Assistant AI reads, sorts, and drafts replies in your brand's voice — so you only see the emails that truly need you. Reclaim hours every week. From DKK 3,500/month — first month free.
+> **Button:** Learn more → https://dindrift.com
 
 **Post 3 — Problem/solution**
 Headline: *Every no-show costs you money. Not anymore.*
 > DinDrift's No-Show Follow-Up Agent automatically detects missed appointments and sends personalised rebooking messages — recovering revenue while you focus on your clients.
-> **Button:** Get started → https://dindrift.dk
+> **Button:** Get started → https://dindrift.com
 
 **Post 4 — Reviews angle**
 Headline: *More 5-star reviews. Zero manual effort.*
 > Our Google Reviews Agent automatically asks satisfied customers for a review after every service — personalised, on-brand, and timed perfectly. More reviews. Better local ranking. Less work.
-> **Button:** Book a call → https://dindrift.dk/kontakt
+> **Button:** Book a call → https://dindrift.com/kontakt
 
 ---
 

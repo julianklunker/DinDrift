@@ -17,16 +17,17 @@ export const translations = {
       kontaktSub: "Vælg et tidspunkt der passer dig — 30 min, gratis og uforpligtende.",
     },
     hero: {
-      prefix: "Dine nye AI",
+      prefix: "Din nye AI",
       rotatingTexts: [
-        "Assistent",
+        "Medarbejder",
         "Sekretær",
         "Bogholder",
         "Chatbot",
-        "Integration",
+        "Leadgenerator",
       ],
       subtext:
-        "Intelligente AI-agenter skræddersyet til din virksomhed — automatisér de kedelige opgaver og fokusér på det, der virkelig betyder noget.",
+        "Skræddersyede AI-agenter, der overtager rutinearbejdet — mails, booking, bogføring og kundeservice — samlet i ét dashboard, du selv styrer. Spar timevis hver uge.",
+      guarantee: "Første måned gratis · Ingen binding · Tilfreds — ellers betaler du ikke",
       btnSolutions: "Se løsninger",
       btnContact: "Kontakt os",
     },
@@ -209,7 +210,7 @@ export const translations = {
       eyebrow: "Vores flagskib",
       title: "Skræddersyet AI-kontrolsystem",
       description:
-        "Ét kommandocenter for alle de AI-agenter, du kører. Se, styr og skalér hele din automatiseringsstak fra ét skræddersyet dashboard — bygget op om din virksomhed, ikke en skabelon.",
+        "Dine AI-agenter arbejder døgnet rundt — dit dashboard viser dig hvad de laver, hvad de sparer dig, og hvor du kan skrue op. Ét kommandocenter, bygget om din virksomhed, ikke en skabelon. Det får du ikke hos andre.",
       features: [
         { title: "Alle agenter, ét dashboard", description: "Sekretær, bogholder, chatbot og resten — samlet ét sted." },
         { title: "Overblik i realtid", description: "Følg hver agents aktivitet og resultater, mens det sker." },
@@ -282,14 +283,15 @@ export const translations = {
     hero: {
       prefix: "Your new AI",
       rotatingTexts: [
-        "Assistant",
+        "Employee",
         "Secretary",
         "Bookkeeper",
         "Chatbot",
-        "Integration",
+        "Lead Engine",
       ],
       subtext:
-        "Intelligent AI agents tailored to your business — automate the tedious tasks and focus on what truly matters.",
+        "Tailored AI agents that take over the routine work — email, bookings, bookkeeping and customer service — unified in one dashboard you control. Save hours every week.",
+      guarantee: "First month free · No commitment · Happy — or you don't pay",
       btnSolutions: "See solutions",
       btnContact: "Contact us",
     },
@@ -472,7 +474,7 @@ export const translations = {
       eyebrow: "Our flagship",
       title: "Tailored AI Control System",
       description:
-        "One command center for every AI agent you run. See, steer, and scale your entire automation stack from a single tailored dashboard — built around your business, not a template.",
+        "Your AI agents work around the clock — your dashboard shows you what they're doing, what they're saving you, and where to scale up. One command center, built around your business, not a template. No one else gives you this.",
       features: [
         { title: "All agents, one dashboard", description: "Secretary, bookkeeper, chatbot and the rest — unified in one place." },
         { title: "Real-time oversight", description: "Track every agent's activity and results as it happens." },

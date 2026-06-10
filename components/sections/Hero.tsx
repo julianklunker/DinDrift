@@ -151,6 +151,10 @@ export default function Hero() {
 
             <CalendlyButton className="text-sm sm:text-base md:text-lg font-semibold tracking-tight text-[#0015ff] bg-white px-4 py-2 sm:px-5 sm:py-2.5 md:px-6 md:py-3 rounded-full shadow-2xl min-h-[44px]" />
           </motion.div>
+
+          <p className="mt-5 sm:mt-6 text-xs sm:text-sm text-muted-foreground text-center">
+            {t.hero.guarantee}
+          </p>
         </div>
       </GlassPanel>
     </section>

@@ -14,9 +14,9 @@ const About = dynamic(() => import("@/components/sections/About"))
 const Contact = dynamic(() => import("@/components/sections/Contact"))
 
 export const metadata: Metadata = {
-  title: { absolute: "AI-sekretær & AI-automatisering | DinDrift" },
+  title: { absolute: "AI-agenter & AI-automatisering | DinDrift" },
   description:
-    "DinDrift bygger AI-agenter til danske virksomheder: AI-sekretær der besvarer opkald og mails, booker tider og følger op — fast månedspris, 0 kr i opstart.",
+    "DinDrift bygger skræddersyede AI-agenter til danske virksomheder — mails, booking, bogføring og kundeservice, styret fra ét dashboard. Første måned gratis.",
   alternates: { canonical: "/" },
 }
 

@@ -27,11 +27,11 @@ const fontMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://dindrift.com"),
   title: {
-    default: "AI-sekretær & AI-automatisering | DinDrift",
+    default: "AI-agenter & AI-automatisering | DinDrift",
     template: "%s | DinDrift",
   },
   description:
-    "DinDrift bygger AI-agenter til danske virksomheder: AI-sekretær der besvarer opkald og mails, booker tider og følger op — fast månedspris, 0 kr i opstart.",
+    "DinDrift bygger skræddersyede AI-agenter til danske virksomheder — mails, booking, bogføring og kundeservice, styret fra ét dashboard. Første måned gratis.",
   keywords: [
     "ai sekretær",
     "ai receptionist",
@@ -60,14 +60,14 @@ export const metadata: Metadata = {
     alternateLocale: "en_US",
     url: "https://dindrift.com",
     siteName: "DinDrift",
-    title: "AI-sekretær & AI-automatisering | DinDrift",
+    title: "AI-agenter & AI-automatisering | DinDrift",
     description:
       "Intelligente AI-agenter skræddersyet til din virksomhed — automatiser de trivielle opgaver og fokuser på det, der betyder noget.",
     images: [{ url: "/dindriftlogo.png", alt: "DinDrift — AI-automatisering" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI-sekretær & AI-automatisering | DinDrift",
+    title: "AI-agenter & AI-automatisering | DinDrift",
     description:
       "Intelligente AI-agenter skræddersyet til din virksomhed. Automatiser rutinerne, vind din tid tilbage.",
     images: ["/dindriftlogo.png"],
